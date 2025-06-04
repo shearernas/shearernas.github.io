@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -142,9 +143,10 @@ html, body {
 }
 
 h1, h2 {
-  font-family: 'Red Hat Text', Arial, sans-serif;
+  font-family: 'Manrope', Arial, sans-serif;
+  font-weight: 600;
 }
 
 a.title {
-  font-family: 'Red Hat Text', Arial, sans-serif;
+  font-family: 'Manrope', Arial, sans-serif;
 }

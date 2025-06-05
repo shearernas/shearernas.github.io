@@ -21,7 +21,7 @@ return (
     <main>
         <HeroSection />
 
-        {/*<AboutSection />*/}
+        <AboutSection />
 
         <section id="projects">
             {/*  

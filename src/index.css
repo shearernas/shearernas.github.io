@@ -154,3 +154,7 @@ a.title {
 h1.body-text-ow {
   font-family: 'Funnel Sans', Arial, sans-serif;
 }
+
+h1.hero-text, h2.about-text {
+  font-weight: 700;
+}

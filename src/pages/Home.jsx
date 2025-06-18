@@ -3,6 +3,8 @@ import { StarBackground } from "@/components/StarBackground";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
+import { ProfessionalProjectsSection } from "@/components/ProfessionalProjectsSection";
+import { ResearchProjectsSection } from "@/components/ResearchProjectsSection";
 
 export const Home = () => {
 
@@ -24,10 +26,8 @@ return (
         <AboutSection />
 
         <section id="projects">
-            {/*  
-            <ResProjectsSection />
-            <ProProjectsSection />}
-            */}
+            <ProfessionalProjectsSection />
+            <ResearchProjectsSection />
         </section>
 
     </main>

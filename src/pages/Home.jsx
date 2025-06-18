@@ -5,6 +5,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ProfessionalProjectsSection } from "@/components/ProfessionalProjectsSection";
 import { ResearchProjectsSection } from "@/components/ResearchProjectsSection";
+import { TopButton } from "@/components/TopButton";
 
 export const Home = () => {
 
@@ -33,6 +34,7 @@ return (
     </main>
 
     {/*Footer*/}
+    <TopButton />
 
     </div>
 )

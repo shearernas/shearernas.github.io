@@ -22,13 +22,21 @@ const projects = [
         description: "My delivrables for MRU's Public Relations First-Generation University-Student Network as part of my community service learning project",
         image: "/projects/mru_pr_fun/mru_pr_fun_1.png",
         tags: ["Visual identity system", "Logo design", "Social media", "Communications"]
+    },
+    {
+        id: 4,
+        title: "My Own Portfolio",
+        description: "This exact portfolio website, which I built from scratch to further my knowledge of React, Tailwind CSS, and responsive web design principles",
+        image: "/projects/portfolio/portfolio_1.png",
+        tags: ["Responsive web design", "React", "Tailwind CSS", "Framer Motion", "JavaScript", "HTML", "CSS"],
+        githubUrl: "https://github.com/shearernas/shearernas.github.io"
     }
 
 ]
 
 export const ProfessionalProjectsSection = () => {
 
-    return <section>
+    return <section id="pro_projects">
     
     </section>;
 

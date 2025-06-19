@@ -12,7 +12,7 @@ const projects = [
         id: 2,
         title: "Heritage Park",
         description: "A scrapbook of my professional design projects for Heritage Park's marketing team as part of my summer internship",
-        image: "/projects/hp/hp_1.png",
+        image: "/projects/hp/hp_1.jpeg",
         tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
         demoUrl: "#" //Link to scrapbook PDF download or repository for video work will go here.
     },
@@ -36,7 +36,28 @@ const projects = [
 
 export const ProfessionalProjectsSection = () => {
 
-    return <section id="pro_projects">
+    return <section id="pro_projects" className="py-24 px-4 relative">
+    <div className="container max-w-screen-xl mx-auto">
+        <h2 className="text-4xl md:text-5xl mb-12 about-text text-center">
+        My Professional<span className="text-primary"> Projects</span>
+        </h2>
+
+        <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
+        These are the professional-quality projects that I have worked on during my time as a student, through work experience co-ops, internships, and community service learning initiatives, as well as those that I worked on as an information design graduate.
+        </p>
+
+        <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project, key) => (
+                <div key={key} className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover">
+                    
+                    <div className="h-48  overflow-hidden">
+                        <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"/> {/* Maybe use mockup images for the scrapbooks and brand kit */}
+                    </div>
+                </div>
+            ))}
+
+        </div>
+    </div>
     
     </section>;
 

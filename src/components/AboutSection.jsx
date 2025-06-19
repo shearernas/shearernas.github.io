@@ -5,7 +5,7 @@ export const AboutSection = () => {
     
     return (
     <section id="about" className="py-25 px-4 relative">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-screen-xl">
             <h2 className="text-4xl md:text-5xl mb-12 about-text text-center">
                 About <span className="text-primary"> Me</span>
             </h2>
@@ -14,12 +14,12 @@ export const AboutSection = () => {
                 <img src="public/images/portrait.png" alt="Nate Shearer portrait" className="w-56 h-56 md:w-75 md:h-75 rounded-2xl object-cover shadow-lg" />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start text-center pt-18">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start text-left pt-18">
                 <div className="space-y-6">
                     <h3 className="text-2xl text-primary font-semibold pb-5 mt-3">A multi-discipline designer who considers all approaches and perspectives...</h3>
 
                     <p className="text-muted-foreground text-md md:text-lg pb-3">
-                        I'm an information designer who sees design as more than aesthetics — it's a tool for understanding, connection, and positive impact. My work combines user research, technical skills, and a genuine desire to make complex information accessible to everyone, regardless of their background or experience level.
+                        I'm an information designer who sees design as more than aesthetics -- it's a tool for understanding, connection, and positive impact. My work combines user research, technical skills, and a genuine desire to make complex information accessible to everyone, regardless of their background or experience level.
                     </p>
 
                     <p className="text-muted-foreground text-md md:text-lg pb-3">
@@ -42,7 +42,7 @@ export const AboutSection = () => {
 
 
                 <div className="grid grid-cols-1 gap-5">
-                    <div className="gradient-border px-6 py-3 card-hover">
+                    <div className="gradient-border p-6 backdrop-blur-lg bg-primary/15 transition-all duration-400 hover:scale-105">
                         <div className="flex items-start gap-5">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <CircleUserRound className="h-6 w-6 text-primary"/>
@@ -53,13 +53,13 @@ export const AboutSection = () => {
                                     Why design for a target user group if your user isn't directly involved within your design process?
                                 </p>
                                 <p className="text-sm">
-                                    User research and testing data is at the forefront of my design process and I believe that this philosophy can be used for much more than just UX/UI design. It is a core information design principle that I take very seriously, as you'll see within the majority of my core projects within my portfolio.
+                                    User research and testing data is at the forefront of my design process and I believe that this philosophy can be used for much more than just UX/UI design. It is a core information design principle that I take very seriously, as you'll see from the majority of the projects within my portfolio.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="gradient-border px-6 py-3 card-hover">
+                    <div className="gradient-border p-6 backdrop-blur-lg bg-primary/15 transition-all duration-400 hover:scale-105">
                         <div className="flex items-start gap-5">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Origami className="h-6 w-6 text-primary"/>
@@ -75,7 +75,7 @@ export const AboutSection = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="gradient-border px-6 py-3 card-hover w-fit">
+                    <div className="gradient-border p-6 backdrop-blur-lg bg-primary/15 transition-all duration-400 hover:scale-105 w-fit">
                     <div className="flex items-start gap-5">
                             <div className="p-3 rounded-full bg-primary/10">
                                 <Code className="h-6 w-6 text-primary"/>

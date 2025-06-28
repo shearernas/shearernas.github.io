@@ -16,14 +16,14 @@ const projects = [
         tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
         demoUrl: "#" //Link to scrapbook PDF download or repository for video work will go here.
     },
-    {
+    /*{
         id: 3,
         title: "MRU PR FUN",
         description: "My delivrables for MRU's Public Relations First-Generation University-Student Network as part of my community service learning project",
         image: "/projects/mru_pr_fun/mru_pr_fun_2.png",
         tags: ["Visual identity system", "Logo design", "Social media", "Communications"]
     },
-    /*{
+    {
         id: 4,
         title: "My Own Portfolio",
         description: "This exact portfolio website, which I built from scratch to further my knowledge of React, Tailwind CSS, and responsive web design principles",

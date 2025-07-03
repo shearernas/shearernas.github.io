@@ -46,7 +46,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-gray-900'>Nordiq Alberta Projects</h1>
+          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta Projects</h1>
           <button 
             className='w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -62,7 +62,7 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section>
               <h2 className='text-xl font-semibold text-gray-900 mb-4'>Project Overview</h2>
-              <p className='text-gray-700 leading-relaxed mb-4'>
+              <p className='leading-relaxed mb-4'>
                 During my work experience co-op with Nordiq Alberta, I collaborated with their marketing team 
                 to create compelling visual content that enhanced their brand presence and supported their 
                 mission of promoting cross-country skiing in Alberta.
@@ -95,7 +95,7 @@ function NordiqPopup({ onClose }) {
             </section>
 
             {/* Skills and tools section */}
-            <section>
+            {/*<section>
               <h2 className='text-xl font-semibold text-gray-900 mb-4'>Skills & Tools Used</h2>
               <div className='flex flex-wrap gap-2 mb-4'>
                 {["Graphic Design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print Design", "Content Creation"].map((skill, index) => (
@@ -107,7 +107,7 @@ function NordiqPopup({ onClose }) {
                   </span>
                 ))}
               </div>
-            </section>
+            </section>*/}
 
             {/* Results/impact section */}
             <section>
@@ -115,15 +115,15 @@ function NordiqPopup({ onClose }) {
               <div className='bg-gray-50 rounded-lg p-6'>
                 <ul className='space-y-3 text-gray-700'>
                   <li className='flex items-start'>
-                    <span className='w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Increased social media engagement by creating visually appealing content that resonated with the skiing community
                   </li>
                   <li className='flex items-start'>
-                    <span className='w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Developed consistent brand materials that strengthened Nordiq Alberta's visual identity across multiple platforms
                   </li>
                   <li className='flex items-start'>
-                    <span className='w-2 h-2 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Collaborated effectively with the marketing team to deliver projects on tight deadlines during peak season
                   </li>
                 </ul>

@@ -7,7 +7,7 @@ const navItems = [
     {name: "About", href: "#about"},
     {name: "Professional Projects", href: "#pro_projects"},
     {name: "Research Projects", href: "#res_projects"},
-    {name: "UX Case Studies", href: "#case_studies"},
+    //{name: "UX Case Studies", href: "#case_studies"},
     {name: "Side Projects", href: "#side_projects"},
     {name: "Contact", href: "#contact"},
 ]

@@ -30,11 +30,15 @@ export const AboutSection = () => {
                         If we get the opportunity to connect, you will find that I also value kindness and mutual recognition as key personal values of mine that I try to bring to every interaction I have with others.
                     </p>
 
+                    <p className="text-muted-foreground text-md md:text-lg pb-3">
+                        Feel free to get in contact with me via the bottom left below if you have an exciting project you'd like to collaborate on or just want to discuss information design or user testing! Additionally, you can use the bottom right button to view my resume, including all my professional and volunteer work in detail.
+                    </p>
+
                     <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                         <a href="#contact" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
                             Get in touch
                         </a>
-                        <a href="#contact" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
+                        <a href="/other/Nate Shearer Resume.pdf" target="_blank" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
                             View my resume
                         </a>
                     </div>

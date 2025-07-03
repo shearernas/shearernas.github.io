@@ -1,11 +1,11 @@
-import NordiqPopup from "./popups/NordiqPopup";
-import { useState } from "react";
+import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import NordiqPopup from "./popups/NordiqPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
-    //HeritagePopup: HeritagePopup // Add future popups here
+    // HeritagePopup: HeritagePopup, // Add future popups here
 };
 
 const projects = [
@@ -15,7 +15,7 @@ const projects = [
         description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
         image: "/projects/nordiq/nordiq_2.png",
         tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
-        popup: "NordiqPopup" //Link to matching popup React component in ./popups goes here
+        popup: "NordiqPopup"
     },
     {
         id: 2,
@@ -23,25 +23,9 @@ const projects = [
         description: "A scrapbook of my professional design projects for Heritage Park's marketing team as part of my summer internship",
         image: "/projects/hp/hp_2.png",
         tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
-        popup: "HeritagePopup" //Link to matching popup React component in ./popups goes here
+        demoUrl: "#"
     },
-   /* {
-        id: 3,
-        title: "MRU PR FUN",
-        description: "My delivrables for MRU's Public Relations First-Generation University-Student Network as part of my community service learning project",
-        image: "/projects/mru_pr_fun/mru_pr_fun_2.png",
-        tags: ["Visual identity system", "Logo design", "Social media", "Communications"]
-    },
-    {
-        id: 4,
-        title: "My Own Portfolio",
-        description: "This exact portfolio website, which I built from scratch to further my knowledge of React, Tailwind CSS, and responsive web design principles",
-        image: "/projects/portfolio/portfolio_1.png",
-        tags: ["Responsive web design", "React", "Tailwind CSS", "Framer Motion", "JavaScript", "HTML", "CSS"],
-        githubUrl: "https://github.com/shearernas/shearernas.github.io"
-    }*/
-
-]
+];
 
 export const ProfessionalProjectsSection = () => {
     const [activePopup, setActivePopup] = useState(null);
@@ -56,12 +40,13 @@ export const ProfessionalProjectsSection = () => {
 
     // Dynamically render the active popup component with animations
     const renderPopup = () => {
-        if (!activePopup || !popupComponents[activePopup]) return null;
+        const PopupComponent = activePopup ? popupComponents[activePopup] : null;
         
-        const PopupComponent = popupComponents[activePopup];
         return (
             <AnimatePresence mode="wait">
-                <PopupComponent key={activePopup} onClose={closePopup} />
+                {activePopup && PopupComponent && (
+                    <PopupComponent key={activePopup} onClose={closePopup} />
+                )}
             </AnimatePresence>
         );
     };

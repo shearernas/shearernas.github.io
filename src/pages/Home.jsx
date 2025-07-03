@@ -28,13 +28,20 @@ return (
 
         <section id="projects">
             <ProfessionalProjectsSection />
-            <ResearchProjectsSection />
+
+            {/*<ResearchProjectsSection />*/}
+
+            {/* <CaseStudySection /> */}
+
+            {/* <SideProjectsSection /> */}
         </section>
+
+        {/* <ContactSection /> */}
 
     </main>
 
-    {/*Footer*/}
     <TopButton />
+    {/*Footer*/}
 
     </div>
 )

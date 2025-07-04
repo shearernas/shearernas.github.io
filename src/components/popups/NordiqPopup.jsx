@@ -32,7 +32,7 @@ function NordiqPopup({ onClose }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className='fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4'
+      className='fixed inset-0 bg-black/50 flex items-center justify-center z-60 p-4'
       onClick={onClose}
     >
       {/* Animated popup content */}
@@ -46,7 +46,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta Projects</h1>
+          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
           <button 
             className='w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -61,32 +61,34 @@ function NordiqPopup({ onClose }) {
             
             {/* Project overview section */}
             <section>
-              <h2 className='text-xl font-semibold text-gray-900 mb-4'>Project Overview</h2>
-              <p className='leading-relaxed mb-4'>
-                During my work experience co-op with Nordiq Alberta, I collaborated with their marketing team 
-                to create compelling visual content that enhanced their brand presence and supported their 
-                mission of promoting cross-country skiing in Alberta.
+              <p className='text-start leading-relaxed p-4 text-black text-lg'>
+                <span className='text-primary'>For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.</span> During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+              </p>
+              <p className='text-start leading-relaxed p-4 text-black text-lg'>
+                 I compiled my work into a design scrapbook that you can flip through as a PDF below.
               </p>
             </section>
 
             {/* Image gallery section */}
             <section>
-              <h2 className='text-xl font-semibold text-gray-900 mb-4'>Featured Work</h2>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mb-6'>
+            <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+                 Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
+              </p>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 place-items-center-safe'>
                 <div className='space-y-3'>
                   <img 
-                    src="/projects/nordiq/nordiq_2.png" 
-                    alt="Nordiq Alberta Project 1" 
-                    className='w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
+                    src="/projects/nordiq/nordiq_3.jpeg" 
+                    alt="Nordiq Alberta BABS ranking banner" 
+                    className='w-60 h-60 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
                     loading="lazy"
                   />
                   <p className='text-sm text-gray-600'>Marketing campaign design for winter events</p>
                 </div>
                 <div className='space-y-3'>
                   <img 
-                    src="/projects/nordiq/nordiq_2.png" 
-                    alt="Nordiq Alberta Project 2" 
-                    className='w-full h-64 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
+                    src="/projects/nordiq/nordiq_4.jpg" 
+                    alt="Nordiq Alberta printed donation cards" 
+                    className='w-60 h-60 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
                     loading="lazy"
                   />
                   <p className='text-sm text-gray-600'>Social media content for athlete spotlights</p>

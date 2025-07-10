@@ -19,7 +19,7 @@ export const AboutSection = () => {
                     <h3 className="text-2xl text-primary font-semibold pb-5 mt-3">A multi-discipline designer who considers all approaches and perspectives...</h3>
 
                     <p className="text-muted-foreground text-md md:text-lg pb-3">
-                        I'm an information designer who sees design as more than aesthetics -- it's a tool for understanding, connection, and positive impact. My work combines user research, technical skills, and a genuine desire to make complex information accessible to everyone, regardless of their background or experience level.
+                        I'm an information designer who sees design as more than aesthetics; it's a tool for understanding, connection, and positive impact. My work combines user research, technical skills, and a genuine desire to make complex information accessible to everyone, regardless of their background or experience level.
                     </p>
 
                     <p className="text-muted-foreground text-md md:text-lg pb-3">

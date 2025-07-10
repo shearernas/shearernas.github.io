@@ -7,6 +7,9 @@ import path from 'path'
 export default defineConfig({
   base: '/',
   plugins: [react(), tailwindcss()],
+  optimizeDeps: {
+    include: ['react-pdf']
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

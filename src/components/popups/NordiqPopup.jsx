@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import PDFViewer from '../../lib/pdfviewer'; 
+import { Document, Page, pdfjs } from 'react-pdf';
 
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 function NordiqPopup({ onClose }) {
   // Prevent background scrolling when popup is open
@@ -26,22 +30,6 @@ function NordiqPopup({ onClose }) {
       document.removeEventListener('keydown', handleEscape);
     };
   }, [onClose]);
-
-  // State for PDF viewer
-  const [showPDF, setShowPDF] = useState(false);
-  const [pdfUrl, setPdfUrl] = useState('');
-  
-  // Function to open PDF popup
-  const openPDF = (url) => {
-    setPdfUrl(url);
-    setShowPDF(true);
-  };
-  
-  // Function to close PDF popup
-  const closePDF = () => {
-    setShowPDF(false);
-    setPdfUrl('');
-  };
 
   return (
     // Animated backdrop
@@ -88,14 +76,7 @@ function NordiqPopup({ onClose }) {
             </section>
 
             <section>
-               {/* PDF Popup - only shows when showPDF is true */}
-                {showPDF && (
-                  <PDFViewer 
-                    openPDF={() => openPDF('/nordiq/nordiq.pdf')}
-                    pdfUrl={pdfUrl} 
-                    onClose={closePDF}
-                  />
-                )}
+              <Document file="/projects/nordiq/nordiq.pdf"/>
             </section>
 
             {/* Image gallery section */}

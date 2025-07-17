@@ -6,6 +6,22 @@ import { Document, Page, pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
 
 function NordiqPopup({ onClose }) {
+
+  // State for dynamic PDF width
+  const [pdfWidth, setPdfWidth] = useState(300);
+
+  // Resize handler to update width
+  useEffect(() => {
+    const updateWidth = () => {
+      const maxWidth = Math.min(window.innerWidth - 80, 500); // keeps some padding
+      setPdfWidth(maxWidth);
+    };
+
+    updateWidth(); // run once on mount
+    window.addEventListener('resize', updateWidth);
+    return () => window.removeEventListener('resize', updateWidth);
+  }, []);
+
   // Prevent background scrolling when popup is open
   useEffect(() => {
     document.body.style.overflow = 'hidden';
@@ -21,7 +37,7 @@ function NordiqPopup({ onClose }) {
         onClose();
       }
     };
-    
+
     document.addEventListener('keydown', handleEscape);
     return () => {
       document.removeEventListener('keydown', handleEscape);
@@ -75,7 +91,8 @@ function NordiqPopup({ onClose }) {
             <section className="flex justify-center">
               <Document file="/projects/nordiq/nordiq.pdf" loading="Loading PDF..." onLoadSuccess={({ numPages }) => console.log('Pages loaded:', numPages)} 
   onLoadError={console.error}>
-                <Page pageNumber={1} width={500} renderTextLayer={false} renderAnnotationLayer={false} />
+                <Page pageNumber={1} width={pdfWidth} renderTextLayer={false} renderAnnotationLayer={false} />
+                <Page pageNumber={2} width={pdfWidth} renderTextLayer={false} renderAnnotationLayer={false} />
               </Document>
             </section>
 

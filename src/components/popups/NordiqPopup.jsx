@@ -3,10 +3,7 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Document, Page, pdfjs } from 'react-pdf';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
 
 function NordiqPopup({ onClose }) {
   // Prevent background scrolling when popup is open
@@ -75,8 +72,11 @@ function NordiqPopup({ onClose }) {
               </p>
             </section>
 
-            <section>
-              <Document file="/projects/nordiq/nordiq.pdf"/>
+            <section className="flex justify-center">
+              <Document file="/projects/nordiq/nordiq.pdf" loading="Loading PDF..." onLoadSuccess={({ numPages }) => console.log('Pages loaded:', numPages)} 
+  onLoadError={console.error}>
+                <Page pageNumber={1} width={500} renderTextLayer={false} renderAnnotationLayer={false} />
+              </Document>
             </section>
 
             {/* Image gallery section */}

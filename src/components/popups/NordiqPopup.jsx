@@ -1,26 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Document, Page, pdfjs } from 'react-pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = '/pdf.worker.min.js';
+import PDFScrollViewer from '../../lib/PDFScrollViewer';
 
 function NordiqPopup({ onClose }) {
-
-  // State for dynamic PDF width
-  const [pdfWidth, setPdfWidth] = useState(300);
-
-  // Resize handler to update width
-  useEffect(() => {
-    const updateWidth = () => {
-      const maxWidth = Math.min(window.innerWidth - 80, 500); // keeps some padding
-      setPdfWidth(maxWidth);
-    };
-
-    updateWidth(); // run once on mount
-    window.addEventListener('resize', updateWidth);
-    return () => window.removeEventListener('resize', updateWidth);
-  }, []);
 
   // Prevent background scrolling when popup is open
   useEffect(() => {
@@ -81,47 +64,46 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section>
               <p className='text-start leading-relaxed p-4 text-black text-lg'>
-                <span className='text-primary'>For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.</span> During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+                <span className='text-primary'>For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.</span> <br /> During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
               </p>
-              <p className='text-start leading-relaxed p-4 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can flip through as a PDF below.
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                 I compiled my work into a design scrapbook that you can scroll through below.
               </p>
             </section>
 
             <section className="flex justify-center">
-              <Document file="/projects/nordiq/nordiq.pdf" loading="Loading PDF..." onLoadSuccess={({ numPages }) => console.log('Pages loaded:', numPages)} 
-  onLoadError={console.error}>
-                <Page pageNumber={1} width={pdfWidth} renderTextLayer={false} renderAnnotationLayer={false} />
-                <Page pageNumber={2} width={pdfWidth} renderTextLayer={false} renderAnnotationLayer={false} />
-              </Document>
+              <PDFScrollViewer
+                basePath="/projects/nordiq/scrapbook" 
+                totalPages={7}
+              />
             </section>
 
-            {/* Image gallery section */}
             <section>
-            <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                 Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
+              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+                Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
               </p>
-              <div className='grid grid-cols-1 md:grid-cols-2 gap-4 mb-6 place-items-center-safe'>
-                <div className='space-y-3'>
+              <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
+                <div className="space-y-4 w-[350px]">
                   <img 
-                    src="/projects/nordiq/nordiq_3.jpeg" 
+                    src="/projects/nordiq/nordiq_3.jpeg"
                     alt="Nordiq Alberta BABS ranking banner" 
-                    className='w-60 h-60 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
+                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                     loading="lazy"
                   />
-                  <p className='text-sm text-gray-600'>Marketing campaign design for winter events</p>
+                  <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
                 </div>
-                <div className='space-y-3'>
+                <div className="space-y-4 w-[350px]">
                   <img 
-                    src="/projects/nordiq/nordiq_4.jpg" 
+                    src="/projects/nordiq/nordiq_4.jpg"
                     alt="Nordiq Alberta printed donation cards" 
-                    className='w-60 h-60 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300'
+                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                     loading="lazy"
                   />
-                  <p className='text-sm text-gray-600'>Social media content for athlete spotlights</p>
+                  <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
               </div>
             </section>
+
 
             {/* Skills and tools section */}
             {/*<section>
@@ -140,18 +122,18 @@ function NordiqPopup({ onClose }) {
 
             {/* Results/impact section */}
             <section>
-              <h2 className='text-xl font-semibold text-gray-900 mb-4'>Impact & Results</h2>
-              <div className='bg-gray-50 rounded-lg p-6'>
-                <ul className='space-y-3 text-gray-700'>
-                  <li className='flex items-start'>
+              <h2 className='text-xl font-semibold text-gray-900 mb-4'>Skills I Developed</h2>
+              <div className='bg-stone-100 rounded-lg p-8'>
+                <ul className='space-y-6 text-primary'>
+                  <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Increased social media engagement by creating visually appealing content that resonated with the skiing community
                   </li>
-                  <li className='flex items-start'>
+                  <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Developed consistent brand materials that strengthened Nordiq Alberta's visual identity across multiple platforms
                   </li>
-                  <li className='flex items-start'>
+                  <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
                     Collaborated effectively with the marketing team to deliver projects on tight deadlines during peak season
                   </li>

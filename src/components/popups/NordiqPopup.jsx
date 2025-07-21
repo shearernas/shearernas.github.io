@@ -104,38 +104,26 @@ function NordiqPopup({ onClose }) {
               </div>
             </section>
 
-
-            {/* Skills and tools section */}
-            {/*<section>
-              <h2 className='text-xl font-semibold text-gray-900 mb-4'>Skills & Tools Used</h2>
-              <div className='flex flex-wrap gap-2 mb-4'>
-                {["Graphic Design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print Design", "Content Creation"].map((skill, index) => (
-                  <span 
-                    key={index}
-                    className='px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium'
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </section>*/}
-
             {/* Results/impact section */}
             <section>
               <h2 className='text-xl font-semibold text-gray-900 mb-4'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
-                <ul className='space-y-6 text-primary'>
+                <ul className='space-y-6 text-primary flex flex-col'>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Increased social media engagement by creating visually appealing content that resonated with the skiing community
+                    Marketing fundamentals within a real-world context, including marketing campaign planning and execution
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Developed consistent brand materials that strengthened Nordiq Alberta's visual identity across multiple platforms
+                    Print design and document layout skills, mainly using Adobe InDesign, Illustrator, and Canva
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Collaborated effectively with the marketing team to deliver projects on tight deadlines during peak season
+                    Video editing for social media, using Canva and Adobe Premiere Pro
+                  </li>
+                  <li className='flex items-start px-3'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Basic AR development and testing using Adobe Aero
                   </li>
                 </ul>
               </div>
@@ -144,8 +132,7 @@ function NordiqPopup({ onClose }) {
             {/* Call to action or additional info */}
             <section className='text-center py-4'>
               <p className='text-gray-600'>
-                This project showcases my ability to work in a professional environment and create 
-                impactful visual content that serves real business objectives.
+                Overall, my time at Nordiq Alberta was extremely plaeasant and very 
               </p>
             </section>
 

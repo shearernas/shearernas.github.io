@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
+import HeritagePopup from "./popups/HeritagePopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
-    // HeritagePopup: HeritagePopup, // Add future popups here
+    HeritagePopup: HeritagePopup,
+    // PRFUNPopup: PRFUNPopup
 };
 
 const projects = [
@@ -23,8 +25,16 @@ const projects = [
         description: "A scrapbook of my professional design projects for Heritage Park's marketing team as part of my summer internship",
         image: "/projects/hp/hp_2.png",
         tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
-        demoUrl: "#"
+        popup: "HeritagePopup"
     },
+    {
+        id: 3,
+        title: "MRU PR FUN",
+        description: "Visual identity system and brand kit redesign for Mount Royal University's Public Relations First Generation University Student organization.",
+        image: "/projects/mru_pr_fun/mru_pr_fun_2.png",
+        tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
+        popup: "PRFUNPopup"
+    }
 ];
 
 export const ProfessionalProjectsSection = () => {

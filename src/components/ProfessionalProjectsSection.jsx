@@ -2,13 +2,11 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
 import HeritagePopup from "./popups/HeritagePopup";
-import PRFUNPopup from './popups/PRFUNPopup';
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
     HeritagePopup: HeritagePopup,
-    // PRFUNPopup: PRFUNPopup
 };
 
 const projects = [
@@ -27,14 +25,6 @@ const projects = [
         image: "/projects/hp/hp_2.png",
         tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
         popup: "HeritagePopup"
-    },
-    {
-        id: 3,
-        title: "MRU PR FUN",
-        description: "Visual identity system and brand kit redesign for Mount Royal University's Public Relations First Generation University Student organization.",
-        image: "/projects/mru_pr_fun/mru_pr_fun_2.png",
-        tags: ["Graphic design", "Marketing", "Video editing", "Adobe InDesign", "Adobe Premiere Pro", "Photography", "Social media"],
-        popup: "PRFUNPopup"
     }
 ];
 

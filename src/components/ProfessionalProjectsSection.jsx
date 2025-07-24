@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
 import HeritagePopup from "./popups/HeritagePopup";
+import PRFUNPopup from './popups/PRFUNPopup';
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {

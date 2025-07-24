@@ -63,8 +63,11 @@ function NordiqPopup({ onClose }) {
             
             {/* Project overview section */}
             <section className='text-start px-8'>
-              <p className='text-start leading-relaxed p-4 text-black text-lg'>
-                <span className='text-primary'>For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.</span> <br /> During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+              <p className='text-start leading-relaxed p-4 text-primary text-lg'>
+                For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                  I compiled my work into a design scrapbook that you can scroll through below.

@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
 
-function HeritagePopup({ onClose }) {
+function PRFUNPopup({ onClose }) {
 
   // Prevent background scrolling when popup is open
   useEffect(() => {
@@ -48,7 +48,7 @@ function HeritagePopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Heritage Park</h1>
+          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
           <button 
             className='w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -64,24 +64,27 @@ function HeritagePopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                After I finished the third year of my undergrad degree, I decided to look for more work experience through an internship and was lucky enough to join Heritage Park Historical Village in Calgary as a part of their new "street team" and marketing department.
-              </p>              
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Within this role, I worked with the marketing team to create content for the Park's active social media accounts and website, such as Instagram Stories and Reels content, advertisement video content to play at events around the park, print design content, such as brochures and diner menus, and even some basic photography around the Park.
+                For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 In addition to my marketing and graphic design work, I also had the opportunity to promote the Park at various events and booths around the city, such as Stampede breakfasts and community festivals. I was able to meet so many great people and share the Park's story and upcoming events with them. It was a great way to connect with the community and promote the Park's mission of preserving and sharing Alberta's history. (I even got to dress up too...)
+                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                 I compiled my work into a design scrapbook that you can scroll through below.
               </p>
             </section>
 
-            {/*<section className="flex justify-center">
+            <section className="flex justify-center">
               <PDFScrollViewer
                 basePath="/projects/nordiq/scrapbook" 
                 totalPages={7}
               />
-            </section>*/}
+            </section>
 
             <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+                Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
+              </p>
               <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
                 <div className="space-y-4 w-[350px]">
                   <img 
@@ -143,4 +146,4 @@ function HeritagePopup({ onClose }) {
   );
 }
 
-export default HeritagePopup;
+export default PRFUNPopup;

@@ -3,8 +3,9 @@ import { StarBackground } from "@/components/StarBackground";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
-import { ProfessionalProjectsSection } from "@/components/ProfessionalProjectsSection";
-import { ResearchProjectsSection } from "@/components/ResearchProjectsSection";
+import { ProCasStudSection } from "@/components/ProCasStudSection";
+import { SideProjectsSection } from "@/components/SideProjectsSection";
+import { ContactSection } from "@/components/ContactSection";
 import { TopButton } from "@/components/TopButton";
 
 export const Home = () => {
@@ -27,16 +28,12 @@ return (
         <AboutSection />
 
         <section id="projects">
-            <ProfessionalProjectsSection />
+            <ProCasStudSection />
 
-            {/*<ResearchProjectsSection />*/}
-
-            {/* <CaseStudySection /> */}
-
-            {/* <SideProjectsSection /> */}
+            <SideProjectsSection />
         </section>
 
-        {/* <ContactSection /> */}
+        <ContactSection />
 
     </main>
 

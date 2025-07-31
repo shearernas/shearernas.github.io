@@ -1,15 +1,25 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
+import  Calgary311Popup from "./popups/311Popup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
+    Calgary311Popup: Calgary311Popup
 };
 
 const projects = [
     {
         id: 1,
+        title: "Calgary 311 Usability Case Study",
+        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
+        image: "/projects/nordiq/nordiq_2.png",
+        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        popup: "Calgary311Popup"
+    },
+    {
+        id: 2,
         title: "Nordiq Alberta",
         description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
         image: "/projects/nordiq/nordiq_2.png",
@@ -64,7 +74,7 @@ export const ProCasStudSection = () => {
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-120"
                                 />
                             </div>
                         </div>

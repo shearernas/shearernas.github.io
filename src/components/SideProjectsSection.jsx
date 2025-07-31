@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import { Construction } from 'lucide-react';
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
@@ -48,10 +49,6 @@ export const SideProjectsSection = () => {
                     My Other<span className="text-primary"> Side Projects</span>
                 </h2>
 
-                <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
-                    Section under construction!
-                </p>
-
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key) => (
                         <div 
@@ -70,6 +67,14 @@ export const SideProjectsSection = () => {
                     ))}
                 </div>
             </div>
+            
+            <p className="text-center text-semibold text-muted-foreground pb-6 max-w-4xl mx-auto text-xl md:text-2xl">
+                    Section under construction!
+                </p>
+                    
+                <div className='flex flex-col items-center justify-center'>
+                    <Construction size={90} className='text-primary' />
+                </div>
 
             {/* Render active popup */}
             {renderPopup()}

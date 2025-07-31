@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
@@ -47,10 +47,10 @@ function NordiqPopup({ onClose }) {
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header with close button */}
-        <div className='sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
+        <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
           <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
           <button 
-            className='w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors duration-200 group'
+            className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
           >
             <X className='w-5 h-5 text-gray-600 group-hover:text-gray-800'/>
@@ -91,7 +91,7 @@ function NordiqPopup({ onClose }) {
                     src="/projects/nordiq/nordiq_3.jpeg"
                     alt="Nordiq Alberta BABS ranking banner" 
                     className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="lazy"
+                    loading="eager"
                   />
                   <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
                 </div>
@@ -100,7 +100,7 @@ function NordiqPopup({ onClose }) {
                     src="/projects/nordiq/nordiq_4.jpg"
                     alt="Nordiq Alberta printed donation cards" 
                     className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="lazy"
+                    loading="eager"
                   />
                   <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
@@ -133,9 +133,12 @@ function NordiqPopup({ onClose }) {
             </section>
 
             {/* Call to action or additional info */}
-            <section className='text-start pb-5 px-8'>
+            <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
-                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there. Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
+                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
+              </p>
+              <p className='text-black text-lg pt-4'>
+                Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
               </p>
             </section>
 

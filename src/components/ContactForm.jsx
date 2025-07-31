@@ -11,6 +11,7 @@ function ContactForm() {
   }
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+     <input type="text" name="_gotcha" className="hidden" aria-hidden="true" />
         <div>
             <label htmlFor="name" className="block text-sm font-medium pb-3">
                 Your Name

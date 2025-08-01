@@ -149,4 +149,4 @@ function Calgary311Popup({ onClose }) {
   );
 }
 
-export default NordiqPopup;
+export default Calgary311Popup;

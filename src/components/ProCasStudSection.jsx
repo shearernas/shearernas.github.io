@@ -2,30 +2,37 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
 import  Calgary311Popup from "./popups/311Popup";
+import CraftHivePopup from "./popups/CraftHivePopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
-    Calgary311Popup: Calgary311Popup
+    Calgary311Popup: Calgary311Popup,
+    CraftHivePopup: CraftHivePopup
 };
 
 const projects = [
     {
         id: 1,
         title: "Calgary 311 Usability Case Study",
-        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
-        image: "/projects/nordiq/nordiq_2.png",
-        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        image: "/projects/311/311_cover.png",
+        tags: ["User research", "Undergrad", "Figma", "UX design", "Research", "Case study"],
         popup: "Calgary311Popup"
     },
     {
         id: 2,
         title: "Nordiq Alberta",
-        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
         image: "/projects/nordiq/nordiq_2.png",
         tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
         popup: "NordiqPopup"
-    }
+    },
+    {
+        id: 3,
+        title: "CraftHive Web App",
+        image: "/projects/crafthive/crafthive_cover.png",
+        tags: ["User research", "Undergrad", "Figma", "UX design", "Research", "Case study"],
+        popup: "CraftHivePopup"
+    },
 ];
 
 export const ProCasStudSection = () => {
@@ -76,6 +83,9 @@ export const ProCasStudSection = () => {
                                     alt={project.title} 
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-120"
                                 />
+                                {/*<p>
+                                    {project.title}
+                                </p>*/}
                             </div>
                         </div>
                     ))}

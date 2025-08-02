@@ -30,7 +30,7 @@ const projects = [
         id: 3,
         title: "CraftHive Web App",
         image: "/projects/crafthive/crafthive_cover.png",
-        tags: ["User research", "Undergrad", "Figma", "UX design", "Research", "Case study"],
+        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
         popup: "CraftHivePopup"
     },
 ];

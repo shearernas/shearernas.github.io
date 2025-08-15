@@ -3,12 +3,14 @@ import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
 import  Calgary311Popup from "./popups/311Popup";
 import CraftHivePopup from "./popups/CraftHivePopup";
+import SystemMapPopup from "./popups/SystemMapPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
     NordiqPopup: NordiqPopup,
     Calgary311Popup: Calgary311Popup,
-    CraftHivePopup: CraftHivePopup
+    CraftHivePopup: CraftHivePopup,
+    SystemMapPopup: SystemMapPopup,
 };
 
 const projects = [
@@ -29,10 +31,17 @@ const projects = [
     {
         id: 3,
         title: "CraftHive Web App",
-        image: "/projects/crafthive/crafthive_cover.png",
+        image: "/projects/crafthive/crafthive_1.png",
         tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
         popup: "CraftHivePopup"
     },
+    {
+        id: 4,
+        title: "Systems Mapping Project",
+        image: "/projects/systemsmap/systemsmap_cover.png",
+        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
+        popup: "CraftHivePopup"
+    }
 ];
 
 export const ProCasStudSection = () => {
@@ -67,7 +76,7 @@ export const ProCasStudSection = () => {
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
-                    These are the UX case studies, user research projects, and front-end design initiatives that I completed during my time as an undergrad student, as well as through my work experience co-op, which I developed independently and collaboratively as an Information Design graduate. Click on each image to view the project details and insights into my design process!
+                    These are the UX case studies, research projects, and front-end design initiatives that I completed during my time as an undergrad student, as well as through my work experience co-op, which I developed independently and collaboratively as an Information Design graduate. Click on each image to view the project details and insights into my design process!
                 </p>
 
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

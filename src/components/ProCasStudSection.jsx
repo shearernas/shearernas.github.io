@@ -4,6 +4,7 @@ import NordiqPopup from "./popups/NordiqPopup";
 import  Calgary311Popup from "./popups/311Popup";
 import CraftHivePopup from "./popups/CraftHivePopup";
 import SystemMapPopup from "./popups/SystemMapPopup";
+import UsabilityPopup from "./popups/UsabilityPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
@@ -11,6 +12,7 @@ const popupComponents = {
     Calgary311Popup: Calgary311Popup,
     CraftHivePopup: CraftHivePopup,
     SystemMapPopup: SystemMapPopup,
+    UsabilityPopup: UsabilityPopup
 };
 
 const projects = [
@@ -39,8 +41,15 @@ const projects = [
         id: 4,
         title: "Systems Mapping Project",
         image: "/projects/systemsmap/systemsmap_cover.png",
-        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
-        popup: "CraftHivePopup"
+        tags: ["Systems thinking", "Systems mapping", "Literary review", "Research", "Figma", "Subject matter expert interviews"],
+        popup: "SystemMapPopup"
+    },
+    {
+        id: 5,
+        title: "INFO 3600 Usability and User Testing Project",
+        image: "/projects/usability/usability_cover.png",
+        tags: ["Ideation", "Prototyping", "User testing methodolgies", "Think aloud protocol", "UX design"],
+        popup: "UsabilityPopup"
     }
 ];
 

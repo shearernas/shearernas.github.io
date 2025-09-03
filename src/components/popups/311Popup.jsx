@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
+import MarkdownViewer from '../../lib/MarkdownViewer';
 
 function Calgary311Popup({ onClose }) {
 
@@ -70,21 +71,29 @@ function Calgary311Popup({ onClose }) {
                 For this project, I had to pull out all the stops and apply everything I had learned in my undergrad degree, including user research, usability testing, and design thinking methodologies.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can scroll through below.
+                 To start, I began by organizing my research, defining my problem, and presenting my solution by creating a research dossier and project proposal, which you can have a look through below. My research here represents the greatest variety of first and second hand sources I've consulted, from official City of Calgary reports to asking citizens on Reddit. Taking my findings, I determined that the issue with Calgary's 311 app was <strong>citizens who wanted to contribute to their community were left feeling excluded and frustrated by the lack of service request progress and feedback from the City's end.</strong>
               </p>
             </section>
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/311/proposal" 
+                totalPages={15}
               />
             </section>
 
             <section className='px-8'>
-              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                After defining my problem clearly, through a variety of real-world sources and opinions, I proposed my solution, which was to redesign the 311 app's interface and introduce a more visual and informative "service request lifecycle" that helps Calgarians stay informed on the progress of thier requests and keeps them satisfied and trusting of the City's 311 service.
               </p>
+              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+                To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the app for myself to report infrastructure issues around my neighborhood. I also observed other's thoughts on using the app and compiled my findings into a Markdown document.
+              </p>
+              
+              <section className="flex justify-center">
+                <MarkdownViewer basePath="/projects/311/primary.md" />
+              </section>
+
               <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
                 <div className="space-y-4 w-[350px]">
                   <img 

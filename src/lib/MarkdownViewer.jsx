@@ -26,20 +26,22 @@ function MarkdownViewer({ basePath }) {
   }, [basePath]);
 
   return (
-    <div
-      style={{ maxWidth: containerWidth }}
-      className="prose prose-lg max-w-none
-                 overflow-y-auto max-h-[75vh]
-                 px-4 space-y-6
-                 [&::-webkit-scrollbar]:w-2
-                 [&::-webkit-scrollbar-track]:rounded-full
-                 [&::-webkit-scrollbar-track]:bg-gray-100
-                 [&::-webkit-scrollbar-thumb]:rounded-full
-                 [&::-webkit-scrollbar-thumb]:bg-gray-300"
-    >
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>
-        {markdown}
-      </ReactMarkdown>
+    <div className="py-10">
+      <div
+        style={{ maxWidth: containerWidth }}
+        className="prose prose-lg max-w-none
+                  overflow-y-auto max-h-[75vh]
+                  px-4 space-y-6 text-start
+                  [&::-webkit-scrollbar]:w-2
+                  [&::-webkit-scrollbar-track]:rounded-full
+                  [&::-webkit-scrollbar-track]:bg-gray-200
+                  [&::-webkit-scrollbar-thumb]:rounded-full
+                  [&::-webkit-scrollbar-thumb]:bg-gray-400"
+      >
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {markdown}
+        </ReactMarkdown>
+      </div>
     </div>
   );
 }

@@ -90,7 +90,7 @@ function Calgary311Popup({ onClose }) {
                 To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the app for myself to report infrastructure issues around my neighborhood. I also observed other's thoughts on using the app and compiled my findings into a Markdown document.
               </p>
               
-              <section className="flex justify-center">
+              <section className="flex justify-center bg-stone-100 rounded-lg">
                 <MarkdownViewer basePath="/projects/311/primary.md" />
               </section>
 

@@ -38,7 +38,7 @@
 - Returns you to the main menu, with a tiny little pop up at the bottom of the screen saying your problem has been successfully submitted  
 - No other confirmation screen made me a little uneasy — where do I go next to check the status of my report?  
 - Do I need to submit my name and email to get sent updates through email, like other people?  
-- I was genuinely confused on where to go next, outside of me doing usability testing  
+- Beyond just me doing usability testing, I was genuinely confused on where to go next
 
 ## My Requests Screen
 - This just felt like the natural progression to see where my report went after submission  
@@ -55,13 +55,10 @@
 
 ## New Request Submission Screen (Round 2)
 - Followed the same report process as the first round but submitted my name, email, and phone number along with the request  
-- Same result as other report at the **My Requests** screen  
+- Same result as other report at the "My Requests" screen  
 - Did not receive any further emails or contact after report  
 - I did get an email about an hour later:  
 
-> Thank you for reporting your city services needs.  
-> The information regarding a streetlight outage will be transferred to the streetlight outage map application within the next two business days.  
-> Please use the following link to check the status of the streetlight repair:  
-> [https://streetlightoutage.calgary.ca](https://streetlightoutage.calgary.ca)  
+  > Thank you for reporting your city services needs. The information regarding a streetlight outage will be transferred to the streetlight outage map application within the next two business days. Please use the following link to check the status of the streetlight repair:  https://streetlightoutage.calgary.ca. 
 
 - It seems like the City is really pushing for streetlight requests to go through this service  

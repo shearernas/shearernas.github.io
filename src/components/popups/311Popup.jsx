@@ -3,6 +3,7 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
 import MarkdownViewer from '../../lib/MarkdownViewer';
+import FigmaViewer from '../../lib/FigmaViewer';
 
 function Calgary311Popup({ onClose }) {
 
@@ -71,7 +72,7 @@ function Calgary311Popup({ onClose }) {
                 For this project, I had to pull out all the stops and apply everything I had learned in my undergrad degree, including user research, usability testing, and design thinking methodologies.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 To start, I began by organizing my research, defining my problem, and presenting my solution by creating a research dossier and project proposal, which you can have a look through below. My research here represents the greatest variety of first and second hand sources I've consulted, from official City of Calgary reports to asking citizens on Reddit. Taking my findings, I determined that the issue with Calgary's 311 app was <strong>citizens who wanted to contribute to their community were left feeling excluded and frustrated by the lack of service request progress and feedback from the City's end.</strong>
+                 To start, I began by organizing my research, defining my problem, and presenting my solution by creating a research dossier and project proposal, which you can have a look through below. My research here represents the greatest variety of first and second hand sources I've consulted, from official City of Calgary reports to asking citizens on Reddit.<strong> Considering my findings and initial research, I determined that the biggest issue with Calgary's 311 app was that Calgarians were left feeling excluded and frustrated by the lack of service request progress and helpful feedback from the City's end.</strong>
               </p>
             </section>
 
@@ -87,14 +88,32 @@ function Calgary311Popup({ onClose }) {
                 After defining my problem clearly, through a variety of real-world sources and opinions, I proposed my solution, which was to redesign the 311 app's interface and introduce a more visual and informative "service request lifecycle" that helps Calgarians stay informed on the progress of thier requests and keeps them satisfied and trusting of the City's 311 service.
               </p>
               <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the app for myself to report infrastructure issues around my neighborhood. I also observed other's thoughts on using the app and compiled my findings into a Markdown document.
+                To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the 311 app for myself to report a couple infrastructure issues around my neighborhood. I then compiled my first hand findings, along with some observations on other people's use of the app, into a small Markdown document, which you can view below.
               </p>
               
-              <section className="flex justify-center bg-stone-100 rounded-lg">
+              <div className="flex justify-center bg-stone-100 rounded-lg">
                 <MarkdownViewer basePath="/projects/311/primary.md" />
-              </section>
+              </div>
+            </section>
 
-              <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
+            <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                The next step was the meat and potatoes of this project: the usability testing. To facilitate a smooth and productive user testing procedure, I devised a protocol/plan to follow over the last 2-3 months of the project's lifecycle.
+              </p>
+              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+                Firstly, I wanted to get a good idea of what people think about the app's UI and how easy it is to navigate, as well as their thoughts on how effective my initial approach to the solution was. What better way to accomplish this than a card sorting activity and paper UI walkthrough, which is what I conducted with 4 participants (AO,KS,MM,AS) and compiled into a FigJam board for ease of viewing below.  <a className='text-primary hover:underline' target='_blank' href='https://www.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&t=kmqhlXLOD2Fy35qU-1'>(This FigJam board is also here if you would like a fullscreen view)</a>
+              </p>
+
+              <FigmaViewer link='https://embed.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&embed-host=share' />
+              
+
+              {/*<div className="flex justify-center rounded-lg bg-stone-100">
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="250" src="https://embed.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&embed-host=share" ></iframe>
+              </div>*/}
+            </section>
+                          
+              {/*Image grid section below*/}
+              {/*<div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
                 <div className="space-y-4 w-[350px]">
                   <img 
                     src="/projects/nordiq/nordiq_3.jpeg"
@@ -113,8 +132,7 @@ function Calgary311Popup({ onClose }) {
                   />
                   <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
-              </div>
-            </section>
+              </div>*/}
 
             {/* Results/impact section */}
             <section className='px-8 py-5'>

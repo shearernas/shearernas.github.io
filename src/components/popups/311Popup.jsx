@@ -87,90 +87,116 @@ function Calgary311Popup({ onClose }) {
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 After defining my problem clearly, through a variety of real-world sources and opinions, I proposed my solution, which was to redesign the 311 app's interface and introduce a more visual and informative "service request lifecycle" that helps Calgarians stay informed on the progress of thier requests and keeps them satisfied and trusting of the City's 311 service.
               </p>
-              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the 311 app for myself to report a couple infrastructure issues around my neighborhood. I then compiled my first hand findings, along with some observations on other people's use of the app, into a small Markdown document, which you can view below.
               </p>
-              
-              <div className="flex justify-center bg-stone-100 rounded-lg">
+            </section>
+
+            <section className='px-8'>
+            <div className="flex justify-center bg-stone-100 rounded-lg">
                 <MarkdownViewer basePath="/projects/311/primary.md" />
               </div>
             </section>
 
             <section className='px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                The next step was the meat and potatoes of this project: the usability testing. To facilitate a smooth and productive user testing procedure, I devised a protocol/plan to follow over the last 2-3 months of the project's lifecycle.
+                Firstly, I wanted to get a good idea of what people think about the app's UI and how easy it is to navigate, as well as their thoughts on how effective my initial approach to the solution was. What better way to accomplish this than a card sorting activity and paper UI walkthrough, which is what I conducted with 4 participants and compiled into a FigJam board for ease of viewing below.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Firstly, I wanted to get a good idea of what people think about the app's UI and how easy it is to navigate, as well as their thoughts on how effective my initial approach to the solution was. What better way to accomplish this than a card sorting activity and paper UI walkthrough, which is what I conducted with 4 participants and compiled into a FigJam board for ease of viewing below. 
+                Each "page" for this FigJam board contains the card sort for 1 out of my 4 participants (KS, AO, MM, AS). The little white box at the top left corner can be clicked to view another page and see the results from my other participants. <br />
+                <a className='text-primary hover:underline' target='_blank' href='https://www.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&t=kmqhlXLOD2Fy35qU-1'>(This FigJam board is also here if you would like a bigger fullscreen view)</a>
               </p>
-              <p className='text-start leading-relaxed px-4 pt-2 pb-12 text-black text-sm'>
-                <a className='text-primary hover:underline' target='_blank' href='https://www.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&t=kmqhlXLOD2Fy35qU-1'>(This FigJam board is also here if you would like a fullscreen view)</a>
-              </p>
+            </section>
 
+            <section className='px-8'>
               <FigmaViewer link='https://embed.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&embed-host=share' />
+            </section>
 
-              <FigmaViewer link='https://embed.figma.com/proto/Czil96iF6NQ1zXNuIxzzSI/INFO-4680-User-Test-Wireframes?page-id=137%3A65&node-id=137-66&p=f&viewport=-15%2C325%2C0.38&scaling=scale-down&content-scaling=fixed&starting-point-node-id=137%3A66&embed-host=share' />
-              
+            <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                The goal for this card sort activity was to understand the value my participants (average Calgarian citizens and users of the 311 app) place on report certain service request categories and how to represent these within the UI of the app itself (icons, colours, text, etc.), which with the results I would know how to start organizing the UI of the app to address some user's concerns of "choice paralysis" within the service request category menu. Additionally, I was able to determine how my participants would prefer the revamped system I had planned for a service request timeline.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                The next step was the meat and potatoes of this project: the usability testing. To facilitate a smooth and productive user testing procedure, I devised a protocol/plan to follow over the last 2-3 months of the project's lifecycle.
+              </p>
+            </section>
 
-              {/*<div className="flex justify-center rounded-lg bg-stone-100">
-                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="400" height="250" src="https://embed.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&embed-host=share" ></iframe>
-              </div>*/}
+            <section className='px-8'>
+            <div className="flex justify-center bg-stone-100 rounded-lg">
+                <MarkdownViewer basePath="/projects/311/solution.md" />
+              </div>
+            </section>
+
+            <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                With these results, I was able to start on designing the wireframe for the app using Figma. My wireframe went through 3 major reveisions, each backed with a round of first-hand usability testing with my participants. With each revision, I was able to learn about how my users appreicated the greater transparency of their service request's status in the City's hands, as well as how my users interacted with the wireframe to accomplish the tasks they were given.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Below is my final case study that I prepared for the conluding presentation of this project. It goes over the work I put into completing this project from start to finish, including more details on each revision of the wireframe and the decisions I made leading up to my final revision.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/311/case_study" 
+                totalPages={8}
+              />
+            </section>
+
+            <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                The final revision on my wireframe on Figma is interactive and viewable below! Feel free to click on the viewport and use the 311 app as my user test participants did to report a service request.
+              </p>
+            </section>
+
+            <section className='px-8'>
+              <FigmaViewer link='https://embed.figma.com/proto/Czil96iF6NQ1zXNuIxzzSI/INFO-4680-User-Test-Wireframes?page-id=137%3A65&node-id=137-66&p=f&viewport=-15%2C325%2C0.38&scaling=scale-down&content-scaling=fixed&starting-point-node-id=137%3A66&embed-host=share' /> 
             </section>
                           
-              {/*Image grid section below*/}
-              {/*<div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_3.jpeg"
-                    alt="Nordiq Alberta BABS ranking banner" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
-                </div>
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_4.jpg"
-                    alt="Nordiq Alberta printed donation cards" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
-                </div>
-              </div>*/}
+            <section className='px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                At the conclusion of this project, I presented my solution to the general public, my professors, and my classmates for feedback and discussion.
+              </p>
+            </section>
 
-            {/* Results/impact section */}
-            <section className='px-8 py-5'>
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/311/presentation" 
+                totalPages={2}
+              />
+            </section>
+
+            <section className='px-8'>
               <h2 className='font-bold text-gray-900 pb-5 text-2xl'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
                 <ul className='space-y-6 text-primary flex flex-col'>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Marketing fundamentals within a real-world context, including marketing campaign planning and execution
+                    Planning a full-scale capstone project from start to finish completely by myself
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Print design and document layout skills, mainly using Adobe InDesign, Illustrator, and Canva
+                    UX/UI design from a completely informed, researched, and prepared viewpoint
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Video editing for social media, using Canva and Adobe Premiere Pro
+                    In-depth user testing protocol development and execution using real participants
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Basic AR development and testing using Adobe Aero
+                    Turning testing results and feedback into actionable items to improve a UX/UI design
+                  </li>
+                  <li className='flex items-start px-3'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Presenting my ideas and solutions to real-world problems in a realistic and convincing way
                   </li>
                 </ul>
               </div>
             </section>
 
-            {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
-                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
-              </p>
-              <p className='text-black text-lg pt-4'>
-                Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
+                My capstone project was an incredibly satisfying end to my degree and a very valuable opportunity to showcase the information design skills that I'm most passionate about. Usability is incredibly important within our increasingly modernizing world and I believe it is an incredibly valuable outlet to keep out design decisions informed and grounded, serving our most valuable users within a sea of visual confusion and noise.
               </p>
             </section>
 

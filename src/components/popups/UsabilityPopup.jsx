@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
 
-function NordiqPopup({ onClose }) {
+function UsabilityPopup({ onClose }) {
 
   // Prevent background scrolling when popup is open
   useEffect(() => {
@@ -48,7 +48,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
+          <h1 className='text-2xl font-bold text-primary'>Usability Research Project</h1>
           <button 
             className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -64,69 +64,131 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.
+                As a first introduction to usability and user experience studies within my Information Design degree, I was tasked, along with a group, to explore prototyping and uncovering multiple user journeys through a fictional food bank donation application. 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
-              </p>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can scroll through below.
+                We designed and realized the application as a solution to commercial businesses who would like to donate their leftovers to their local food bank or shelter organizations. To discover our problem, we performed a problem analysis activity, shown below.
               </p>
             </section>
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/usability/problem" 
+                totalPages={1}
               />
             </section>
 
-            <section className='px-8'>
-              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Next was focusing on what features our app should include. We started right off the bat with some usability tests, performing a card sort activity with multiple different users, in which these users are tasked with sorting key terms, which we had organized through the text analysis program Orange, into different groups based on a group topic. Here are the results of my card sort activities I performed with 2 different users.
               </p>
-              <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_3.jpeg"
-                    alt="Nordiq Alberta BABS ranking banner" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
-                </div>
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_4.jpg"
-                    alt="Nordiq Alberta printed donation cards" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
-                </div>
-              </div>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/card_sort" 
+                totalPages={2}
+              />
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Once our results from the first round of user testing was collected, we moved on to compiling our results visually to determine which sets of key terms were grouped together by each of our different users, shown below also.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/orange" 
+                totalPages={1}
+              />
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Key terms that were shown more prominently had more users group them together with other terms of the same colour. We used this visual to design the basis of our interactive application, which first started with creating three user journeys then further developing wireframes to allow our users to further test the usability of our app through these three user journeys. 
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Simplicity was a major principle taught in this class - keeping things simple, to the point, and visually straightforward was one thing we had to keep in mind while developing and designing the wireframes for the application. Below are the user journeys laid out to inform the development of our app's first wireframe designs.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/user_journey" 
+                totalPages={1}
+              />
+            </section>
+
+            <section className='text-start px-8'>
+            <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              We then used a think-aloud protocol testing approach to further allow us to zone in on pain points within our wireframe's UI
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              We were able to compile these transcripts from all of our users into incredibly useful categories and visuals, which allowed us to make the changes we needed to further improve usability for our app's navigation, examples of both also shown below.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/transcript" 
+                totalPages={2}
+              />
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Using our results, we worked together to change the final UI design for our wireframe. Some changes were minor, such as clearer language used for directions within the app, while others involved removal or change of whole UI elements, such as the example show below.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/change" 
+                totalPages={1}
+              />
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Below is the final wireframe for our retail food donation app. We created 3 different wireframe layouts to accurately represent all 3 of the user journeys we created earlier, to best represent the most realistic use-case scenarios we could see ourselves developing this app for. 
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              Because the focus for this project was mainly on the process of good user testing protocols and practices used within usability studies, and not the end project, our wireframe was lacking a coherent visual design system. Still, we were proud of what we had accomplished as a group, especially considering that our design was backed with first-hand usability research using real test participants.
+              </p>
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/usability/wireframe" 
+                totalPages={1}
+              />
             </section>
 
             {/* Results/impact section */}
-            <section className='px-8 py-5'>
+            <section className='px-8'>
               <h2 className='font-bold text-gray-900 pb-5 text-2xl'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
-                <ul className='space-y-6 text-primary flex flex-col'>
+                <ul className='space-y-6 text-start text-primary flex flex-col'>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Marketing fundamentals within a real-world context, including marketing campaign planning and execution
+                    Problem discovery, using ideation techniques and brainstorming
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Print design and document layout skills, mainly using Adobe InDesign, Illustrator, and Canva
+                    Basic UX/UI design within Figma
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Video editing for social media, using Canva and Adobe Premiere Pro
+                    Real-world usability testing techniques and approaches, including card sort, think aloud protocol, and controlled user observation
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Basic AR development and testing using Adobe Aero
+                    Use of text analysis and data visualization software AntConc and Orange to process our text data into usable design information
+                  </li>
+                  <li className='flex items-start px-3'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Formatting user test results and design recommendations into reports and results that developers could appreciate and use effectively
                   </li>
                 </ul>
               </div>
@@ -134,11 +196,8 @@ function NordiqPopup({ onClose }) {
 
             {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
-              <p className='text-black text-lg'>
-                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
-              </p>
               <p className='text-black text-lg pt-4'>
-                Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
+                Overall, the skills I learned from this course might be the most important ones I have gained so far as an information design student. Gathering user test text data and compiling it to be used in a way that developers can understand is an extremely useful and underappreciated skill, as well as the philosophy of putting simplicity first for user design. I firmly believe that this course will be super important for growing my repertoire as a designer and granting me the skills needed to succeed in my chosen career path.
               </p>
             </section>
 
@@ -149,4 +208,4 @@ function NordiqPopup({ onClose }) {
   );
 }
 
-export default NordiqPopup;
+export default UsabilityPopup;

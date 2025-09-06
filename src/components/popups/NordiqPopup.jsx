@@ -48,7 +48,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
+          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta Work Experience Co-op</h1>
           <button 
             className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -108,7 +108,7 @@ function NordiqPopup({ onClose }) {
             </section>
 
             {/* Results/impact section */}
-            <section className='px-8 py-5'>
+            <section className='px-8'>
               <h2 className='font-bold text-gray-900 pb-5 text-2xl'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
                 <ul className='space-y-6 text-primary flex flex-col'>

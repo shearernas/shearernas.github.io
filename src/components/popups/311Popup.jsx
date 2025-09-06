@@ -100,8 +100,11 @@ function Calgary311Popup({ onClose }) {
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 The next step was the meat and potatoes of this project: the usability testing. To facilitate a smooth and productive user testing procedure, I devised a protocol/plan to follow over the last 2-3 months of the project's lifecycle.
               </p>
-              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                Firstly, I wanted to get a good idea of what people think about the app's UI and how easy it is to navigate, as well as their thoughts on how effective my initial approach to the solution was. What better way to accomplish this than a card sorting activity and paper UI walkthrough, which is what I conducted with 4 participants (AO,KS,MM,AS) and compiled into a FigJam board for ease of viewing below.  <a className='text-primary hover:underline' target='_blank' href='https://www.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&t=kmqhlXLOD2Fy35qU-1'>(This FigJam board is also here if you would like a fullscreen view)</a>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Firstly, I wanted to get a good idea of what people think about the app's UI and how easy it is to navigate, as well as their thoughts on how effective my initial approach to the solution was. What better way to accomplish this than a card sorting activity and paper UI walkthrough, which is what I conducted with 4 participants and compiled into a FigJam board for ease of viewing below. 
+              </p>
+              <p className='text-start leading-relaxed px-4 pt-2 pb-12 text-black text-sm'>
+                <a className='text-primary hover:underline' target='_blank' href='https://www.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&t=kmqhlXLOD2Fy35qU-1'>(This FigJam board is also here if you would like a fullscreen view)</a>
               </p>
 
               <FigmaViewer link='https://embed.figma.com/board/YNFf1Oo0Dqs1TVDv7kIUBe/Card-Sorting-Activity-Results?node-id=0-1&embed-host=share' />

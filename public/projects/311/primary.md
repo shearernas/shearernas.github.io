@@ -59,6 +59,6 @@
 - Did not receive any further emails or contact after report  
 - I did get an email about an hour later:  
 
-  > Thank you for reporting your city services needs. The information regarding a streetlight outage will be transferred to the streetlight outage map application within the next two business days. Please use the following link to check the status of the streetlight repair:  https://streetlightoutage.calgary.ca. 
+  > Thank you for reporting your city services needs. The information regarding a streetlight outage will be transferred to the streetlight outage map application within the next two business days. Please use the following link to check the status of the streetlight repair: (Link to City of Calgary website).
 
 - It seems like the City is really pushing for streetlight requests to go through this service  

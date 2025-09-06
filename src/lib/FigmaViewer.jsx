@@ -1,5 +1,3 @@
-import React from "react";
-
 function FigmaViewer({ link }) {
     return (
       <div className="w-full aspect-video">

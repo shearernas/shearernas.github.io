@@ -25,17 +25,17 @@ const projects = [
     },
     {
         id: 2,
-        title: "Nordiq Alberta",
-        image: "/projects/nordiq/nordiq_2.png",
-        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
-        popup: "NordiqPopup"
-    },
-    {
-        id: 3,
         title: "CraftHive Web App",
         image: "/projects/crafthive/crafthive_1.png",
         tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
         popup: "CraftHivePopup"
+    },
+    {
+        id: 3,
+        title: "Nordiq Alberta",
+        image: "/projects/nordiq/nordiq_2.png",
+        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        popup: "NordiqPopup"
     },
     {
         id: 4,

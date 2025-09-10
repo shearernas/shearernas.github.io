@@ -8,14 +8,32 @@ const popupComponents = {
 };
 
 const projects = [
-    /*{
+    /*
+    {
         id: 1,
-        title: "Nordiq Alberta",
+        title: "SQLSimpl",
         description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
         image: "/projects/nordiq/nordiq_2.png",
         tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
         popup: "NordiqPopup"
-    }*/
+    },
+    {
+        id: 2,
+        title: "IndigiPRINTS + Mixed Reality Research",
+        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
+        image: "/projects/nordiq/nordiq_2.png",
+        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        popup: "NordiqPopup"
+    },
+    {
+        id: 3,
+        title: "Lucid Travels",
+        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
+        image: "/projects/nordiq/nordiq_2.png",
+        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        popup: "NordiqPopup"
+    }
+    */
 ];
 
 export const SideProjectsSection = () => {

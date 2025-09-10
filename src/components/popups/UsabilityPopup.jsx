@@ -64,7 +64,7 @@ function UsabilityPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                As a first introduction to usability and user experience studies within my Information Design degree, I was tasked, along with a group, to explore prototyping and uncovering multiple user journeys through a fictional food bank donation application. 
+                As a first introduction to usability and user experience studies within the 3rd year of my Information Design degree, I was tasked, along with a group, to explore prototyping and uncovering multiple user journeys through a fictional food bank donation application. 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 We designed and realized the application as a solution to commercial businesses who would like to donate their leftovers to their local food bank or shelter organizations. To discover our problem, we performed a problem analysis activity, shown below.
@@ -197,7 +197,7 @@ function UsabilityPopup({ onClose }) {
             {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg pt-4'>
-                Overall, the skills I learned from this course might be the most important ones I have gained so far as an information design student. Gathering user test text data and compiling it to be used in a way that developers can understand is an extremely useful and underappreciated skill, as well as the philosophy of putting simplicity first for user design. I firmly believe that this course will be super important for growing my repertoire as a designer and granting me the skills needed to succeed in my chosen career path.
+                Overall, the skills I learned from this course might be the most important ones I have gained so far as an Information Design student. The philosophy of putting simplicity first for user design turned out to be a very useful and intuitive principle that we used to guide our UX design. Additionally, we found out that gathering user test text data and compiling it in a way that developers can appreciate is an extremely useful and underappreciated skill.
               </p>
             </section>
 

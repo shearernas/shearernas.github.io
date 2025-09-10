@@ -3,7 +3,7 @@ import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
 
-function NordiqPopup({ onClose }) {
+function CraftHivePopup({ onClose }) {
 
   // Prevent background scrolling when popup is open
   useEffect(() => {
@@ -48,7 +48,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
+          <h1 className='text-2xl font-bold text-primary'>CraftHive, Business Tools Suite for Local Artisans</h1>
           <button 
             className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -64,24 +64,24 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.
+                During my 4th and final year in my Information Design degree, I was graciously accepted into MRU's Institute for Innovation andf Entrepreneurship and their Tech LiftOff program. This program allowed me to work together with fellow MRU students in business and computer science and challenged us to find a real-world problem and develop a software solution to help mitigate this problem.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+                My team, named Team Byte Brigade, conducted preliminary problem discovery research, using in person and online methods, to figure out what problem we would like to tackle over the next 8 months in the program. We leveraged some of the connections we had with local artists and friends, as well as created discussions with others online using websites like Reddit, to help discover that a very real problem lots of smaller, local artists and crafters 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can scroll through below.
+                 
               </p>
             </section>
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/crafthive/vis" 
+                totalPages={17}
               />
             </section>
 
-            <section className='px-8'>
+            {/*<section className='px-8'>
               <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
                 Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
               </p>
@@ -105,7 +105,7 @@ function NordiqPopup({ onClose }) {
                   <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
               </div>
-            </section>
+            </section>*/}
 
             {/* Results/impact section */}
             <section className='px-8 py-5'>
@@ -149,4 +149,4 @@ function NordiqPopup({ onClose }) {
   );
 }
 
-export default NordiqPopup;
+export default CraftHivePopup;

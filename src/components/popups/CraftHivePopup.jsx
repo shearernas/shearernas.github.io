@@ -66,11 +66,35 @@ function CraftHivePopup({ onClose }) {
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
                 During my 4th and final year in my Information Design degree, I was graciously accepted into MRU's Institute for Innovation andf Entrepreneurship and their Tech LiftOff program. This program allowed me to work together with fellow MRU students in business and computer science and challenged us to find a real-world problem and develop a software solution to help mitigate this problem.
               </p>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                My team, named Team Byte Brigade, conducted preliminary problem discovery research, using in person and online methods, to figure out what problem we would like to tackle over the next 8 months in the program. We leveraged some of the connections we had with local artists and friends, as well as created discussions with others online using websites like Reddit, to help discover that a very real problem lots of smaller, local artists and crafters 
+              <p className='text-start leading-relaxed px-4 pt-2 pb-10 text-black text-lg'>
+                My team, named Team Byte Brigade, conducted preliminary problem discovery research, using in person and online methods, to figure out what problem we would like to tackle over the next 8 months in the program. We leveraged some of the connections we had with local artists and friends, as well as created discussions with others online using websites like Reddit, to help us discover that a very real problem exists in a niche that we had not thought about initially: <span className='text-primary font-medium'>small, local artists and crafters.</span>
               </p>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 
+
+              <div className='bg-stone-100 rounded-lg px-8 py-8'>
+                <ul className='space-y-6 text-primary flex flex-col'>
+                  <p className='text-start leading-relaxed px-4 text-black text-lg'>
+                    The issue we discovered is that, while many of these artists love their craft, they felt somewhat intimidated by the business side of things. 
+                    
+                    <li className='flex items-start px-3 py-4'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Many of them had little to no experience with marketing, accounting, tracking inventory, or other business-related tasks and felt overwhelmed by the prospect of having to learn these skills on top of their craft.
+                    </li>
+                    <li className='flex items-start px-3 pb-4'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Many artists we talked to during customer discovery at local conventions, markets, and art fairs used their passion to create a side-hustle, going to such events to supplement their income and share their art, on top of working full time jobs and attending school/universtiy, leaving them with very little time to manage the complicated business side of their passion.
+                    </li>
+                    <li className='flex items-start px-4'>
+                    <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
+                    Additionally, they considered learning these skills to be necessary for any sort of growth in the future, wether they would like to turn their hobby into a full-time business or simply expand their side-hustle into new markets.
+                    </li>
+                  </p>
+                </ul>
+              </div>
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 text-black text-lg'>
+                The majority of the teams customer discovery was conducted by myself in person at local art fairs and conventions (Ebi Con, Rakku Con, Calgary Farmer's Market, SAMRU Art Market, etc.), where I spoke to over 20 local artists and small business owners about their experiences selling their art, the challenges they faced, and what features they would like to see from a software product that could help them alleviate their stress. Additionally, I contacted more local artists and small business owners through mutual connections over email, asking similar questions.
               </p>
             </section>
 

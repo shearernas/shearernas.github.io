@@ -93,7 +93,7 @@ function NordiqPopup({ onClose }) {
                     className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                     loading="eager"
                   />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
+                  <p className="text-md text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
                 </div>
                 <div className="space-y-4 w-[350px]">
                   <img 
@@ -102,7 +102,7 @@ function NordiqPopup({ onClose }) {
                     className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
                     loading="eager"
                   />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
+                  <p className="text-md text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
               </div>
             </section>

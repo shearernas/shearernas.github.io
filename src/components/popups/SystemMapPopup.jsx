@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
+import FigmaViewer from '../../lib/FigmaViewer';
 
 function NordiqPopup({ onClose }) {
 
@@ -48,7 +49,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
+          <h1 className='text-xl font-bold text-primary'>Systems Map Project: Unfolding the Relationships Between Homelessness and Crime</h1>
           <button 
             className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}
@@ -76,38 +77,17 @@ function NordiqPopup({ onClose }) {
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/systemsmap/dossier" 
+                totalPages={37}
               />
             </section>
 
             <section className='px-8'>
-              <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
-                Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
-              </p>
-              <div className="flex flex-col md:flex-row gap-x-8 gap-y-6 justify-center items-start mb-6">
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_3.jpeg"
-                    alt="Nordiq Alberta BABS ranking banner" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Marketing campaign design for winter events</p>
-                </div>
-                <div className="space-y-4 w-[350px]">
-                  <img 
-                    src="/projects/nordiq/nordiq_4.jpg"
-                    alt="Nordiq Alberta printed donation cards" 
-                    className="w-[350px] h-[350px] object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-                    loading="eager"
-                  />
-                  <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
-                </div>
-              </div>
+              <FigmaViewer link='https://embed.figma.com/design/kaKtKvyDOxZFHq9D0RtIhg/Systems-Map-Project--Uncovering-Relationships-Between-Homeless-and-Crime?node-id=0-1&embed-host=share' />
             </section>
 
-            {/* Results/impact section */}
+           
+            {/*
             <section className='px-8 py-5'>
               <h2 className='font-bold text-gray-900 pb-5 text-2xl'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
@@ -132,7 +112,6 @@ function NordiqPopup({ onClose }) {
               </div>
             </section>
 
-            {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
                 This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
@@ -140,7 +119,7 @@ function NordiqPopup({ onClose }) {
               <p className='text-black text-lg pt-4'>
                 Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
               </p>
-            </section>
+            </section>*/}
 
           </div>
         </div>

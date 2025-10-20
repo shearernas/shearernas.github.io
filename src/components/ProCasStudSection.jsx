@@ -51,13 +51,13 @@ const projects = [
         tags: ["Ideation", "Prototyping", "User testing methodolgies", "Think aloud protocol", "UX design"],
         popup: "UsabilityPopup"
     },
-    /*{
+     {
         id: 6,
-        title: "IndigiPRINTS AR + AR Wayfinding Projects",
-        image: "/projects/usability/usability_cover.png",
+        title: "IndigiPRINTS + AR Wayfinding Projects",
+        image: "/projects/ar/ar_cover.png",
         tags: ["Research", "AR design", "Mixed reality", "AR for storytelling", "Wayfinding using AR"],
         popup: "ARPopup"
-    }*/
+    }
 ];
 
 export const ProCasStudSection = () => {

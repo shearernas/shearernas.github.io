@@ -165,7 +165,7 @@ function NordiqPopup({ onClose }) {
               </div>
             </section>
 
-            <section className='text-start pb-10 px-8'>
+            <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
                 This project allowed me to gain a real look into how my skills as an Information Designer can address real world problems. While the job of an Information Designer is not to outright solve many issues, we can help to unpack and visualize the complex relationships at play, helping others to better understand these problems and identify potential intervention points to make a difference. I believe my work on the connections between homelessness and crime have allowed me to view many related factors I observe everyday within a new light, and I hope that my work can help others do the same.
               </p>

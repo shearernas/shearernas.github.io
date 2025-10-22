@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import NordiqPopup from "./popups/NordiqPopup";
-import  Calgary311Popup from "./popups/311Popup";
+import Calgary311Popup from "./popups/311Popup";
 import CraftHivePopup from "./popups/CraftHivePopup";
 import SystemMapPopup from "./popups/SystemMapPopup";
 import UsabilityPopup from "./popups/UsabilityPopup";
+import ARPopup from "./popups/ARPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
@@ -12,7 +13,8 @@ const popupComponents = {
     Calgary311Popup: Calgary311Popup,
     CraftHivePopup: CraftHivePopup,
     SystemMapPopup: SystemMapPopup,
-    UsabilityPopup: UsabilityPopup
+    UsabilityPopup: UsabilityPopup,
+    ARPopup: ARPopup
 };
 
 const projects = [
@@ -113,6 +115,7 @@ export const ProCasStudSection = () => {
                                 </p>*/}
                             </div>
                         </div>
+                    
                     ))}
                 </div>
             </div>

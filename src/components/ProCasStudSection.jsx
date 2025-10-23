@@ -89,12 +89,12 @@ export const ProCasStudSection = () => {
     return (
         <section id="pro_projects" className="py-32 px-4 relative">
             <div className="container max-w-screen-xl mx-auto">
-                <h2 className="text-4xl md:text-5xl mb-12 about-text text-center">
-                    My Projects and<span className="text-primary"> UX Case Studies</span>
+                <h2 className="text-4xl md:text-5xl mb-16 about-text text-center">
+                    My Projects and<span className="text-primary"> Case Studies</span>
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
-                    These are the UX case studies, research projects, and front-end design initiatives that I completed during my time as an undergrad student, as well as through my work experience co-op, which I developed independently and collaboratively as an Information Design graduate. Click on each image to view the project details and insights into my design process!
+                    These are some of the UX case studies, research and design projects, and front-end design initiatives that I completed during my time as a student, as well as through my work experience co-op, which I developed independently and collaboratively as an Information Design graduate. Click on each image to view the project details and insights into my design process!
                 </p>
 
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,31 +1,28 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Construction } from 'lucide-react';
+import SQLSimplPopup from "./popups/SQLSimplPopup";
+import LucidTravelsPopup from "./popups/LucidTravelsPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
-
+    SQLSimplPopup: SQLSimplPopup,
+    LucidTravelsPopup: LucidTravelsPopup
 };
 
 const projects = [
-    /*
+    
     {
         id: 1,
         title: "SQLSimpl",
-        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
-        image: "/projects/nordiq/nordiq_2.png",
-        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        image: "/projects/sqlsimpl/sqlsimpl_cover.png",
         popup: "SQLSimplPopup"
     },
     {
         id: 2,
         title: "Lucid Travels",
-        description: "A scrapbook of my professional design projects for Nordiq Alberta's marketing team as part of my work experience co-op",
-        image: "/projects/nordiq/nordiq_2.png",
-        tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
+        image: "/projects/lucidtravels/lucidtravels_cover.png",
         popup: "LucidTravelsPopup"
     }
-    */
 ];
 
 export const SideProjectsSection = () => {
@@ -59,6 +56,10 @@ export const SideProjectsSection = () => {
                     My Other<span className="text-primary"> Side Projects</span>
                 </h2>
 
+                <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
+                    These are some examples of other projects and side initiatives I created as a student and in my free time. They showcase my passion and enthusiam for other aspects of Information Design beyond usability studies and UX design. Click on each image to view more info on these side projects and explore why I'm so passionate for them!
+                </p>
+
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, key) => (
                         <div 
@@ -78,14 +79,6 @@ export const SideProjectsSection = () => {
                 </div>
             </div>
             
-            <p className="text-center text-semibold text-muted-foreground pb-6 max-w-4xl mx-auto text-xl md:text-2xl">
-                    Section under construction!
-                </p>
-                    
-                <div className='flex flex-col items-center justify-center'>
-                    <Construction size={90} className='text-primary' />
-                </div>
-
             {/* Render active popup */}
             {renderPopup()}
         </section>

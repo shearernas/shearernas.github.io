@@ -48,7 +48,7 @@ function NordiqPopup({ onClose }) {
       >
         {/* Header with close button */}
         <div className='sticky top-0 bg-zinc-100 border-b border-gray-200 px-6 py-4 flex justify-between items-center z-10'>
-          <h1 className='text-2xl font-bold text-primary'>Nordiq Alberta</h1>
+          <h1 className='text-2xl font-bold text-primary'>Lucid Travels</h1>
           <button 
             className='w-10 h-10 rounded-full bg-zinc-200 hover:bg-zinc-300 flex items-center justify-center transition-colors duration-200 group'
             onClick={onClose}

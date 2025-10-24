@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
+import MarkdownViewer from '../../lib/MarkdownViewer';
 
 function NordiqPopup({ onClose }) {
 
@@ -64,20 +65,67 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                This web design and instructional design project showcases my 
+                For a class focused on designing for interactivity, I created a project that focused on universal accessiblity for technical knowledge.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+                I was tasked with doing preliminary customer discovery research and designing a resulting product wireframe and prototype that addresses a problem I discovered from my research. What I found is that, despite being an increasingly desirable skill for employers, many people find learning SQL to be intimidating and difficult due to prior technical inexperience or misonceptions that it is an incredibly complex programming language. 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can scroll through below.
+                To address this problem, I designed "SQLSimpl", a web-based application that simplifies SQL concepts and syntax through detailed, step-by-step tutorials, visual aids, and practical examples. The goal of SQLSimpl is to make learning SQL more accessible and less daunting for everyone, regardless of prior technical knowledge or experience, ultimately empowering more individuals to acquire this valuable skill.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                My background research and project proposal can be viewed in the Markdown document below.
+              </p>
+            </section>
+
+            <section className='px-8'>
+              <div className="flex justify-center bg-stone-100 rounded-lg">
+                  <MarkdownViewer basePath="/projects/sqlsimpl/research.md" />
+                </div>
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Designing a learning plan for the website's contents was my next focus. I decided to take a strategy I had learned in another class focused on instructional design to help, called the ADDIE model. By following this model, I was able to create a structured and effective learning plan for SQLSimpl that would meet the needs of my target audience.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                I decided to split the course content into 4 progressive modules, each building upon the previous one to gradually increase the learner's understanding and proficiency in SQL. A draft of the learning journey for SQLSimpl can be viewed below.
+              </p>
+            </section>
+
+            <section className='px-8'>
+              <div className="flex justify-center bg-stone-100 rounded-lg">
+                  <MarkdownViewer basePath="/projects/sqlsimpl/learningjourney.md" />
+                </div>
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Designing a learning plan for the website's contents was my next focus. I decided to take a strategy I had learned in another class focused on instructional design to help, called the ADDIE model. By following this model, I was able to create a structured and effective learning plan for SQLSimpl that would meet the needs of my target audience.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                I decided to split the course content into 4 progressive modules, each building upon the previous one to gradually increase the learner's understanding and proficiency in SQL. A draft of the learning journey for SQLSimpl can be viewed below.
               </p>
             </section>
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/sqlsimpl/website" 
+                totalPages={5}
+              />
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/sqlsimpl/presentation" 
+                totalPages={6}
+              />
+            </section>
+
+            <section className="flex justify-center">
+              <PDFScrollViewer
+                basePath="/projects/sqlsimpl/changes" 
+                totalPages={5}
               />
             </section>
 
@@ -88,19 +136,19 @@ function NordiqPopup({ onClose }) {
                 <ul className='space-y-6 text-primary flex flex-col'>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Marketing fundamentals within a real-world context, including marketing campaign planning and execution
+                    Instructional design principles and practices
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Print design and document layout skills, mainly using Adobe InDesign, Illustrator, and Canva
+                    Further developing my web design skills using Bootstrap, CSS, and basic JavaScript
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Video editing for social media, using Canva and Adobe Premiere Pro
+                    Technical writing for a universal audience
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Basic AR development and testing using Adobe Aero
+                    UX-focused web design, paying particular attention to accessibility
                   </li>
                 </ul>
               </div>
@@ -109,11 +157,19 @@ function NordiqPopup({ onClose }) {
             {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
-                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
+
               </p>
-              <p className='text-black text-lg pt-4'>
-                Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
-              </p>
+            </section>
+
+            <section className='px-8 pb-6'>
+              <div className='bg-stone-100 rounded-lg p-8'>
+                <p className='text-black text-start text-lg pb-4'>
+                  SQLSimpl is live and can be accessed <a className='text-primary hover:underline' target='_blank' href='https://nateshearer.com/SQLSimpl'>here!</a>
+                </p>
+                <p className='text-black text-start text-lg'>
+                  The public GitHub repository for SQLSimpl can be viewed at this link <a className='text-primary hover:underline' target='_blank' href='https://github.com/shearernas/SQLSimpl'>here.</a> <br />All HTML markup, CSS code, and JS code is authored by myself without the use of AI help.
+                </p>
+              </div>
             </section>
 
           </div>

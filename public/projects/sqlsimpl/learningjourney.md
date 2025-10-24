@@ -9,8 +9,8 @@ Complete beginners with little to no prior technical knowledge or SQL knowledge 
 	- Introduce users to MySQL
 	- Install and run MySQL
 	- Create and manipulate a table within a database
-	- Perform simple `SELECT` and `JOIN` queries using different criteria 
-	  (`WHERE HAVING IS` etc)
+	- Perform simple SELECT and JOIN queries using different criteria 
+	  (WHERE, HAVING, IS, etc.)
 
 **Assess learning environment constraints**
 The main constraint will be those who feel discouraged or intimidated by learning a programming or technical topic. The learning environment will be asynchronously online, through a browser-based webpage interface, to allow ease of access.

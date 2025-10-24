@@ -281,11 +281,12 @@ prospect? [Online forum post]. SQLServerCentral.
 https://www.sqlservercentral.com/forums/topic/no-experience-withprogramming-how-difficult-is-sql-for-new-prospect-4
 
 JY-HRL. (2024). Why is MySQL so difficult to use? [Online forum post]. Reddit.
-https://www.reddit.com/r/DatabaseHelp/comments/1aowrxi/why_is_mysql_so_difficult_to_use/
+https://www.reddit.com/r/DatabaseHelp/comments/1aowrxi/why_is_mysql_so_difficult_to_use
 
 LSD_at_the_Dentist. (2022). how relevant is SQL? is it worth learning? [Online forum
 post]. Reddit.
-https://www.reddit.com/r/learnprogramming/comments/v5aaio/how_relevant_is_sql_is_it_worth_learning/
+https://www.reddit.com/r/learnprogramming/comments/v5aaio/
+how_relevant_is_sql_is_it_worth_learning/
 
 Marchesa_Corsiglia. (2023). Trying to learn MySQL [Online forum post]. Reddit.
 https://www.reddit.com/r/Database/comments/178jmfk/trying_to_learn_mysql/

@@ -101,10 +101,7 @@ function NordiqPopup({ onClose }) {
 
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Designing a learning plan for the website's contents was my next focus. I decided to take a strategy I had learned in another class focused on instructional design to help, called the ADDIE model. By following this model, I was able to create a structured and effective learning plan for SQLSimpl that would meet the needs of my target audience.
-              </p>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                I decided to split the course content into 4 progressive modules, each building upon the previous one to gradually increase the learner's understanding and proficiency in SQL. A draft of the learning journey for SQLSimpl can be viewed below.
+                Once the learning plan and content roadmap for the website was complete, I had to build the website itself. To save me some time, I decicded to use Bootsrap to provide me with a boilerplate and plug-and-play layout components. I kept the CSS basic and quick, to make sure the website was accessible for anyone to view, avoiding animations, contraasting colours, and fancy fonts. Some screenshots of the first draft of my website can be viewed below.
               </p>
             </section>
 
@@ -115,6 +112,12 @@ function NordiqPopup({ onClose }) {
               />
             </section>
 
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Additionally, to provide context, I created a presentation to introduce my project concept, summarize my research findings, and explain some of the design decisions that went into the first draft of SQLSimpl.
+              </p>
+            </section>
+
             <section className="flex justify-center">
               <PDFScrollViewer
                 basePath="/projects/sqlsimpl/presentation" 
@@ -122,11 +125,26 @@ function NordiqPopup({ onClose }) {
               />
             </section>
 
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                As I progressed through this project, adding content to Module 1, I made contant iterations and changes to the website based on feedback from my peers, as well as WCAG accessibility guidelines. Some of the changes I made are listed below as part of my final presentation, in addition to screenshots of the current live website, for comparison.
+              </p>
+            </section>
+
             <section className="flex justify-center">
               <PDFScrollViewer
                 basePath="/projects/sqlsimpl/changes" 
                 totalPages={5}
               />
+            </section>
+
+            <section className='text-start px-8'>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Overall, this project allowed me to combine my interests in web design, technical writing, and instructional design to create a product that addresses a real-world problem. Through research, planning, and iteration, I was able to develop SQLSimpl into a functional prototype that has the potential to make learning SQL more accessible and less intimidating for a wide range of learners. I'm incredibly proud of this project, as it kickstarted my enthusiasm for making technical knowledge more friendly and approachable for everyone.
+              </p>
+              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                Even though SQLSimpl started as a project for school, I still comntinue to work on it in my free time, adding content to the other modules and improving the website design and functionality for universal accessibility. I'm only completed with Module 1 at the moment, but I plan to have the other modules finished and the website fully launched in the near future! This website is live and the link can be found below.
+              </p>
             </section>
 
             {/* Results/impact section */}
@@ -152,13 +170,6 @@ function NordiqPopup({ onClose }) {
                   </li>
                 </ul>
               </div>
-            </section>
-
-            {/* Call to action or additional info */}
-            <section className='text-start pb-8 px-8'>
-              <p className='text-black text-lg'>
-
-              </p>
             </section>
 
             <section className='px-8 pb-6'>

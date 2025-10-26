@@ -64,24 +64,24 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                For my undergrad program, I was required to work a certain amount of hours in a real-world work experience. I had the pleasure of working with Nordiq Alberta, the provincial authority for cross-country skiing in Alberta.
+                Lucid Travels is an exploration into an era of print design, marketing, and popular culture. Ever since I was a kid, I've always been fascinated by the 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                During my work experience co-op, I collaborated with the small marketing team to create compelling visual content that enhanced their brand presence and supported their mission of promoting cross-country skiing in Alberta.
+                Dsample
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 I compiled my work into a design scrapbook that you can scroll through below.
+                 sample
               </p>
             </section>
 
             <section className="flex justify-center">
               <PDFScrollViewer
-                basePath="/projects/nordiq/scrapbook" 
-                totalPages={7}
+                basePath="/projects/lucidtravels/brandguide" 
+                totalPages={4}
               />
             </section>
 
-            <section className='px-8'>
+            {/*<section className='px-8'>
               <p className='text-start leading-relaxed px-4 pt-4 pb-12 text-black text-lg'>
                 Additionally, here are some examples of my work in print. To say it felt nice to see my own visual design examples in real-life print would be a bit of an understatement.
               </p>
@@ -105,28 +105,27 @@ function NordiqPopup({ onClose }) {
                   <p className="text-sm text-gray-600 text-center text-pretty">Social media content for athlete spotlights</p>
                 </div>
               </div>
-            </section>
+            </section>*/}
 
-            {/* Results/impact section */}
             <section className='px-8 py-5'>
               <h2 className='font-bold text-gray-900 pb-5 text-2xl'>Skills I Developed</h2>
               <div className='bg-stone-100 rounded-lg p-8'>
                 <ul className='space-y-6 text-primary flex flex-col'>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Marketing fundamentals within a real-world context, including marketing campaign planning and execution
+                    sample
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Print design and document layout skills, mainly using Adobe InDesign, Illustrator, and Canva
+                    sample
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Video editing for social media, using Canva and Adobe Premiere Pro
+                    Vsample
                   </li>
                   <li className='flex items-start px-3'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Basic AR development and testing using Adobe Aero
+                    sample
                   </li>
                 </ul>
               </div>
@@ -135,10 +134,7 @@ function NordiqPopup({ onClose }) {
             {/* Call to action or additional info */}
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
-                This was the first outlet for me to apply the skills I learned as an undergrad student within a real-world public environment. I'm incredibly grateful to the Nordiq Alberta team for allowing me this opportunity and for their constant support and feedback during my work experience co-op there.
-              </p>
-              <p className='text-black text-lg pt-4'>
-                Overall, I'm incredibly happy with the skills I learned and work I produced at Nordiq and I know I'll look back at my time there with fond memories.
+                sample
               </p>
             </section>
 

@@ -143,7 +143,7 @@ function NordiqPopup({ onClose }) {
                 Overall, this project allowed me to combine my interests in web design, technical writing, and instructional design to create a product that addresses a real-world problem. Through research, planning, and iteration, I was able to develop SQLSimpl into a functional prototype that has the potential to make learning SQL more accessible and less intimidating for a wide range of learners. I'm incredibly proud of this project, as it kickstarted my enthusiasm for making technical knowledge more friendly and approachable for everyone.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Even though SQLSimpl started as a project for school, I still comntinue to work on it in my free time, adding content to the other modules and improving the website design and functionality for universal accessibility. I'm only completed with Module 1 at the moment, but I plan to have the other modules finished and the website fully launched in the near future! This website is live and the link can be found below.
+                Even though SQLSimpl started as a project for school, I still continue to work on it in my free time, adding content to the other modules and improving the website design and functionality for universal accessibility. I'm only completed with Module 1 at the moment, but I plan to have the other modules finished and the website fully launched in the near future! This website is live and the link can be found below.
               </p>
             </section>
 

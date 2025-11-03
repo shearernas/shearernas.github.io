@@ -16,13 +16,13 @@ const projects = [
         title: "SQLSimpl",
         image: "/projects/sqlsimpl/sqlsimpl_cover.png",
         popup: "SQLSimplPopup"
-    },
+    }/*,
     {
         id: 2,
         title: "Lucid Travels",
         image: "/projects/lucidtravels/lucidtravels_cover.png",
         popup: "LucidTravelsPopup"
-    }
+    }*/
 ];
 
 export const SideProjectsSection = () => {

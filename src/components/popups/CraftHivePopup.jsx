@@ -67,7 +67,7 @@ function CraftHivePopup({ onClose }) {
                 During my 4th and final year in my Information Design degree, I was graciously accepted into MRU's Institute for Innovation and Entrepreneurship and their Tech LiftOff program. This program allowed me to work together with fellow MRU students in business and computer science and challenged us to find a real-world problem and develop a software solution to help mitigate this problem.
               </p>
               <p className='text-start leading-relaxed px-4 pt-2 pb-10 text-black text-lg'>
-                My team, named Team Byte Brigade, conducted preliminary problem discovery research, using in person and online methods, to figure out what problem we would like to tackle over the next 8 months in the program. We leveraged some of the connections we had with local artists and friends, as well as created discussions with others online using websites like Reddit, to help us discover that a very real problem exists in a niche that we had not thought about initially: <span className='text-primary font-medium'>small, local artists and crafters.</span>
+                My team, named Team Byte Brigade, conducted preliminary problem discovery research, using in person and online methods, to figure out what problem we would like to tackle over the next 8 months in the program. We leveraged some of the connections we had with local artists and friends, as well as created discussions with others online using websites like Reddit, to help us discover that a very real problem exists in a niche that we had not thought about initially: <span className='text-primary font-medium'>small, local artists and craftspeople.</span>
               </p>
 
               <div className='bg-stone-100 rounded-lg px-8 py-8'>
@@ -81,7 +81,7 @@ function CraftHivePopup({ onClose }) {
                     </li>
                     <li className='flex items-start px-3 pb-4'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Many artists we talked to during customer discovery at local conventions, markets, and art fairs used their passion to create a side-hustle, going to such events to supplement their income and share their art, on top of working full time jobs and attending school/universtiy, leaving them with very little time to manage the complicated business side of their passion.
+                    Many artists we talked to during customer discovery at local conventions, markets, and art fairs used their passion to create a side-hustle, going to such events to supplement their income and share their art, on top of working full time jobs and attending school/university, leaving them with very little time to manage the complicated business side of their passion.
                     </li>
                     <li className='flex items-start px-4'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
@@ -120,7 +120,7 @@ function CraftHivePopup({ onClose }) {
                     </li>
                     <li className='flex items-start px-3 pb-4'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
-                    Time tracking to ensure that artists compensate themselves in their product pricing for the hard work it takes to handmake their art.
+                    Time tracking to ensure that artists compensate themselves in their product pricing for the hard work it takes to handcraft their art.
                     </li>
                     <li className='flex items-start px-4'>
                     <span className='w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0'></span>
@@ -175,7 +175,7 @@ function CraftHivePopup({ onClose }) {
 
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-               Our wireframe went through 2 main iterations during the development of CraftHive. I personally found it a little challenging to balance the development of the front-end in React with gathering user feedback and improving the wireframe, however, we managed to finalize the app's design through a second wireframe, including the inventory and time tracking features that we developed following the price suggestion feature. Our final wireframe, along with a user flow visual, can be seen below. This wireframe served as the basis for our functional web app, which we demoed during our Demo Day 2 presentation to community members and sharteholders.
+               Our wireframe went through 2 main iterations during the development of CraftHive. I personally found it a little challenging to balance the development of the front-end in React with gathering user feedback and improving the wireframe, however, we managed to finalize the app's design through a second wireframe, including the inventory and time tracking features that we developed following the price suggestion feature. Our final wireframe, along with a user flow visual, can be seen below. This wireframe served as the basis for our functional web app, which we demoed during our Demo Day 2 presentation to community members and shareholders.
               </p>
             </section>
 
@@ -221,7 +221,7 @@ function CraftHivePopup({ onClose }) {
             <section className='px-8'>
               <div className='bg-stone-100 rounded-lg p-8'>
               <p className='text-black text-start text-lg'>
-                The public GitHub repository for CraftHive can be viewed at this link <a className='text-primary hover:underline' target='_blank' href='https://github.com/Yousif0606/Byte-Brigade'>here.</a> <br />I principally authored the JSX React componenets and screens, as well as the custom CSS.
+                The public GitHub repository for CraftHive can be viewed at this link <a className='text-primary hover:underline' target='_blank' href='https://github.com/Yousif0606/Byte-Brigade'>here.</a> <br />I principally authored the JSX React components and screens, as well as the custom CSS.
               </p>
               </div>
             </section>

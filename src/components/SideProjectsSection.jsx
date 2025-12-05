@@ -2,23 +2,31 @@ import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import SQLSimplPopup from "./popups/SQLSimplPopup";
 import LucidTravelsPopup from "./popups/LucidTravelsPopup";
+import HTML5Popup from "./popups/HTML5Popup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
+    HTML5Popup: HTML5Popup,
     SQLSimplPopup: SQLSimplPopup,
     LucidTravelsPopup: LucidTravelsPopup
 };
 
 const projects = [
     
-    {
+    /*{
         id: 1,
+        title: "HTML5 Web Adverts",
+        image: "/projects/html5/html5_cover.png",
+        popup: "HTML5Popup"
+    },*/
+    {
+        id: 2,
         title: "SQLSimpl",
         image: "/projects/sqlsimpl/sqlsimpl_cover.png",
         popup: "SQLSimplPopup"
-    }/*,
+    }/*,,
     {
-        id: 2,
+        id: 3,
         title: "Lucid Travels",
         image: "/projects/lucidtravels/lucidtravels_cover.png",
         popup: "LucidTravelsPopup"

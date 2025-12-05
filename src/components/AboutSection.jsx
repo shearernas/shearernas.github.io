@@ -90,7 +90,7 @@ export const AboutSection = () => {
                                     Knowledge on complicated technical topics doesn't always have to be locked behind a paywall or an intimidating, 400+ page manual.
                                 </p>
                                 <p className="text-sm">
-                                    I believe that technical learning tools should be universally accessible, using information design principles to allow anyone to learn these often complex topics as they would learn to ride a bike, regardless of previous experience or knowledge. Additionally, I am a strong believer in open source software and knowledgebases, which is why my side projects and research are always open source and transparent for anyone to benefit from.
+                                    I believe that technical learning tools should be universally accessible, using information design principles to allow anyone to learn these often complex topics as they would learn to ride a bike, regardless of previous experience or knowledge. Additionally, I am a strong believer in open source software and knowledge sources, which is why my side projects and research are always open source and transparent for anyone to benefit from.
                                 </p>
                             </div>
                         </div>

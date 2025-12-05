@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
 import MarkdownViewer from '../../lib/MarkdownViewer';
 
-function NordiqPopup({ onClose }) {
+function SQLSimplPopup({ onClose }) {
 
   // Prevent background scrolling when popup is open
   useEffect(() => {
@@ -65,10 +65,10 @@ function NordiqPopup({ onClose }) {
             {/* Project overview section */}
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed p-4 text-primary text-lg'>
-                For a class focused on designing for interactivity, I created a project that focused on universal accessiblity for technical knowledge.
+                For a class focused on designing for interactivity, I created a project that focused on universal accessability for technical knowledge.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                I was tasked with doing preliminary customer discovery research and designing a resulting product wireframe and prototype that addresses a problem I discovered from my research. What I found is that, despite being an increasingly desirable skill for employers, many people find learning SQL to be intimidating and difficult due to prior technical inexperience or misonceptions that it is an incredibly complex programming language. 
+                I was tasked with doing preliminary customer discovery research and designing a resulting product wireframe and prototype that addresses a problem I discovered from my research. What I found is that, despite being an increasingly desirable skill for employers, many people find learning SQL to be intimidating and difficult due to prior technical inexperience or misconceptions that it is an incredibly complex programming language. 
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 To address this problem, I designed "SQLSimpl", a web-based application that simplifies SQL concepts and syntax through detailed, step-by-step tutorials, visual aids, and practical examples. The goal of SQLSimpl is to make learning SQL more accessible and less daunting for everyone, regardless of prior technical knowledge or experience, ultimately empowering more individuals to acquire this valuable skill.
@@ -101,7 +101,7 @@ function NordiqPopup({ onClose }) {
 
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Once the learning plan and content roadmap for the website was complete, I had to build the website itself. To save me some time, I decicded to use Bootsrap to provide me with a boilerplate and plug-and-play layout components. I kept the CSS basic and quick, to make sure the website was accessible for anyone to view, avoiding animations, contraasting colours, and fancy fonts. Some screenshots of the first draft of my website can be viewed below.
+                Once the learning plan and content roadmap for the website was complete, I had to build the website itself. To save me some time, I decided to use Bootstrap to provide me with a boilerplate and plug-and-play layout components. I kept the CSS basic and quick, to make sure the website was accessible for anyone to view, avoiding animations, contrasting colours, and fancy fonts. Some screenshots of the first draft of my website can be viewed below.
               </p>
             </section>
 
@@ -127,7 +127,7 @@ function NordiqPopup({ onClose }) {
 
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                As I progressed through this project, adding content to Module 1, I made contant iterations and changes to the website based on feedback from my peers, as well as WCAG accessibility guidelines. Some of the changes I made are listed below as part of my final presentation, in addition to screenshots of the current live website, for comparison.
+                As I progressed through this project, adding content to Module 1, I made constant iterations and changes to the website based on feedback from my peers, as well as WCAG accessibility guidelines. Some of the changes I made are listed below as part of my final presentation, in addition to screenshots of the current live website, for comparison.
               </p>
             </section>
 
@@ -190,4 +190,4 @@ function NordiqPopup({ onClose }) {
   );
 }
 
-export default NordiqPopup;
+export default SQLSimplPopup;

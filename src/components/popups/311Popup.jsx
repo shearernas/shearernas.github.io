@@ -85,7 +85,7 @@ function Calgary311Popup({ onClose }) {
 
             <section className='px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                After defining my problem clearly, through a variety of real-world sources and opinions, I proposed my solution, which was to redesign the 311 app's interface and introduce a more visual and informative "service request lifecycle" that helps Calgarians stay informed on the progress of thier requests and keeps them satisfied and trusting of the City's 311 service.
+                After defining my problem clearly, through a variety of real-world sources and opinions, I proposed my solution, which was to redesign the 311 app's interface and introduce a more visual and informative "service request lifecycle" that helps Calgarians stay informed on the progress of their requests and keeps them satisfied and trusting of the City's 311 service.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                 To get a good understanding of how the current 311 app works and how users interact with the app's interface, I used the 311 app for myself to report a couple infrastructure issues around my neighborhood. I then compiled my first hand findings, along with some observations on other people's use of the app, into a small Markdown document, which you can view below.
@@ -129,10 +129,10 @@ function Calgary311Popup({ onClose }) {
 
             <section className='px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                With these results, I was able to start on designing the wireframe for the app using Figma. My wireframe went through 3 major reveisions, each backed with a round of first-hand usability testing with my participants. With each revision, I was able to learn about how my users appreicated the greater transparency of their service request's status in the City's hands, as well as how my users interacted with the wireframe to accomplish the tasks they were given.
+                With these results, I was able to start on designing the wireframe for the app using Figma. My wireframe went through 3 major revisions, each backed with a round of first-hand usability testing with my participants. With each revision, I was able to learn about how my users appreciated the greater transparency of their service request's status in the City's hands, as well as how my users interacted with the wireframe to accomplish the tasks they were given.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Below is my final case study that I prepared for the conluding presentation of this project. It goes over the work I put into completing this project from start to finish, including more details on each revision of the wireframe and the decisions I made leading up to my final revision.
+                Below is my final case study that I prepared for the concluding presentation of this project. It goes over the work I put into completing this project from start to finish, including more details on each revision of the wireframe and the decisions I made leading up to my final revision.
               </p>
             </section>
 

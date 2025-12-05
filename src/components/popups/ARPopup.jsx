@@ -71,7 +71,7 @@ function ARPopup({ onClose }) {
                 My task was to create a poster filled with infographics and data visualization examples, based on a literature review and my personal experiences using the IndigiPRINTS AR app. The goal of this design was to promote IndigiPRINTS to a broader audience and show the benefits and potential of using AR for storytelling and educational purposes.
               </p>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                 To start, I conducted my preliminary research through a literature review of AR-related research papers and online articles. This helped me understand the current technical landscape of AR technology, its potential in storytelling and information retention, and how it can be used as a legitimaste educational medium with the power to create emotional exhibits that stick with people and allow them to connect with stories being told on a deeper level.
+                 To start, I conducted my preliminary research through a literature review of AR-related research papers and online articles. This helped me understand the current technical landscape of AR technology, its potential in storytelling and information retention, and how it can be used as a legitimate educational medium with the power to create emotional exhibits that stick with people and allow them to connect with stories being told on a deeper level.
               </p>
             </section>
 
@@ -162,7 +162,7 @@ function ARPopup({ onClose }) {
 
             <section className='text-start px-8'>
               <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                Based on this user flow sketch, I conducted a sample "user flow" for myself, going to a real Canadian Tire store and taking pictures to represent what a real use for this app might be. Taking these pictures into Figma, I overlayed UI elements that would be found within an AR viewport to complete a wireframe draft for what this app could look like. Unfortunately, I was unable to add any functionality to this wireframe, as I did not have the technical skills at the time to facilitate this, however I consider this wireframe draft a good representation of what might be possible should this application evolve further than the "proof of concept" stage.
+                Based on this user flow sketch, I conducted a sample "user flow" for myself, going to a real Canadian Tire store and taking pictures to represent what a real use for this app might be. Taking these pictures into Figma, I overlaid UI elements that would be found within an AR viewport to complete a wireframe draft for what this app could look like. Unfortunately, I was unable to add any functionality to this wireframe, as I did not have the technical skills at the time to facilitate this, however I consider this wireframe draft a good representation of what might be possible should this application evolve further than the "proof of concept" stage.
               </p>
             </section>
 
@@ -199,7 +199,7 @@ function ARPopup({ onClose }) {
 
             <section className='text-start pb-8 px-8'>
               <p className='text-black text-lg'>
-                These 2 AR-related projects were the catalyst for my passion and enthusiam for mixed reality and its connection with Information Design. Through working on these projects, I realised that there is a lot of crossover between UX design and mixed reality development and that my skills as an Information Designer are relevant and impactful within a more technical environment.
+                These 2 AR-related projects were the catalyst for my passion and enthusiasm for mixed reality and its connection with Information Design. Through working on these projects, I realised that there is a lot of crossover between UX design and mixed reality development and that my skills as an Information Designer are relevant and impactful within a more technical environment.
               </p>
             </section>
 

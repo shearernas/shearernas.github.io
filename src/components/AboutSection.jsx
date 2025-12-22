@@ -1,5 +1,5 @@
 import { Code, CircleUserRound, Origami  } from "lucide-react";
-
+import ImageCarousel from "/src/lib/ImageCarousel";
 
 export const AboutSection = () => {
     
@@ -11,7 +11,12 @@ export const AboutSection = () => {
             </h2>
 
             <div className="flex flex-col items-center justify-center pt-5 pb-1">
-                <img src="/images/portrait.png" alt="Nate Shearer portrait" className="w-75 h-75 md:w-75 md:h-95 rounded-2xl object-cover shadow-lg" />
+                <ImageCarousel 
+                    basePath="/images"
+                    images={["portrait1.png", "portrait2.png", "portrait3.png"]}
+                    interval={5000}
+                    alt="Nate Shearer portrait photos" 
+                />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-start text-left pt-18">

@@ -13,12 +13,12 @@ const popupComponents = {
 
 const projects = [
     
-    /*{
+    {
         id: 1,
         title: "HTML5 Web Adverts",
         image: "/projects/html5/html5_cover.png",
         popup: "HTML5Popup"
-    },*/
+    },
     {
         id: 2,
         title: "SQLSimpl",

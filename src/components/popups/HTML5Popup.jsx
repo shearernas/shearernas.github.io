@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import PDFScrollViewer from '../../lib/PDFScrollViewer';
+import SVGViewer from '../../lib/SVGViewer';
 
 function HTML5Popup({ onClose }) {
 
@@ -77,20 +78,30 @@ function HTML5Popup({ onClose }) {
               </p>
             </section>
 
+             <section className='text-start px-8'>
+             <PDFScrollViewer
+                basePath="/projects/html5" 
+                totalPages={1}
+              />
+             </section>
+
             <section className='text-start px-8'>
                 <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
                     Below are 3 examples of animated and static web advertisements in standard billboard and MPU sizes that I created in an effort to learn how to work with HTML5 animation and graphic design from web advertisements. No copyright infringement is intended at all! I created these advertisements for educational purposes only, and they are not affiliated with or endorsed by the respective companies.
                 </p>
-            </section>
-
-            <section className='text-start px-8'>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+                    <strong>No copyright infringement is intended at all!</strong> I created these advertisements for educational purposes only, and they are not affiliated with or endorsed by the respective companies.
+                </p>
+                <p className='text-start leading-relaxed px-4 text-black text-lg'>
                 For these static Lexus advertisements below, I did a quick deep dive into the web design principles of Lexus and used existing web advertisements from them as reference for my designs. I wanted to create sleek and modern designs that aligned with Lexus's brand identity, using their color scheme, typography, and overall aesthetic. 
               </p>
             </section>
 
             <section className="flex justify-center">
-                <img src='/projects/html5/lexus/mpu.svg'></img>
+              <SVGViewer
+                basePath="/projects/html5/lexus" 
+                files={["billboard.svg", "mpu.svg"]}
+              />
             </section>
 
             <section className='text-start px-8'>
@@ -100,7 +111,10 @@ function HTML5Popup({ onClose }) {
             </section>
 
             <section className="flex justify-center">
-                <img src='/projects/html5/lexus/mpu.svg'></img>
+              <SVGViewer
+                basePath="/projects/html5/crafthive" 
+                files={["billboard.svg", "mpu.svg", "animated.svg"]}
+              />
             </section>
 
             <section className='text-start px-8'>
@@ -110,7 +124,10 @@ function HTML5Popup({ onClose }) {
             </section>
 
             <section className="flex justify-center">
-                <img src='/projects/html5/lexus/mpu.svg'></img>
+              <SVGViewer
+                basePath="/projects/html5/old_navy" 
+                files={["mpu.svg","animated.svg"]}
+              />
             </section>
 
             {/* Results/impact section */}
@@ -135,7 +152,7 @@ function HTML5Popup({ onClose }) {
             </section>
 
             <section className='text-start px-8'>
-              <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
+              <p className='text-start leading-relaxed px-4 pb-2 text-black text-lg'>
                 Being able to jump back into animation, a skill that I enjoyed learning back in high school using Flash, was incredibly fun and refreshing. Learning that I can use this fun storytelling medium to create modern web advertisements that are relevant in today's digital marketing landscape has motivated me to continue exploring animation and web design in the future. These mock web advertisements have helped me develop new skills and reignited my passion for animation and design.
               </p>
             </section>

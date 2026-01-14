@@ -43,7 +43,7 @@ export const AboutSection = () => {
                         <a href="#contact" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
                             Get in touch
                         </a>
-                        <a href="/other/Nate Shearer Resume.pdf" target="_blank" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
+                        <a href="/other/resume.pdf" target="_blank" className="px-6 py-2 rounded-xl border border-primary text-primary hover:bg-primary/50 hover:text-white transition-colors duration-300">
                             View my resume
                         </a>
                     </div>

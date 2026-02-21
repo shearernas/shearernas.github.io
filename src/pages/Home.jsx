@@ -3,8 +3,8 @@ import { StarBackground } from "@/components/StarBackground";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
-import { ProCasStudSection } from "@/components/ProCasStudSection";
-import { SideProjectsSection } from "@/components/SideProjectsSection";
+import { UXDesignSection } from "@/components/UXDesignSection";
+import { VisualDesignSection } from "@/components/VisualDesignSection";
 import { ContactSection } from "@/components/ContactSection";
 import { TopButton } from "@/components/TopButton";
 
@@ -28,9 +28,9 @@ return (
         <AboutSection />
 
         <section id="projects">
-            <ProCasStudSection />
+            <UXDesignSection />
 
-            <SideProjectsSection />
+            <VisualDesignSection />
         </section>
 
         <ContactSection />

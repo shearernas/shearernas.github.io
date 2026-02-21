@@ -1,39 +1,58 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import Calgary311Popup from "./popups/311Popup";
+import CraftHivePopup from "./popups/CraftHivePopup";
+import UsabilityPopup from "./popups/UsabilityPopup";
+import ARPopup from "./popups/ARPopup";
 import SQLSimplPopup from "./popups/SQLSimplPopup";
-import LucidTravelsPopup from "./popups/LucidTravelsPopup";
-import HTML5Popup from "./popups/HTML5Popup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
-    HTML5Popup: HTML5Popup,
+    Calgary311Popup: Calgary311Popup,
+    CraftHivePopup: CraftHivePopup,
+    UsabilityPopup: UsabilityPopup,
     SQLSimplPopup: SQLSimplPopup,
-    LucidTravelsPopup: LucidTravelsPopup
+    ARPopup: ARPopup
 };
 
 const projects = [
-    
     {
         id: 1,
-        title: "HTML5 Web Adverts",
-        image: "/projects/html5/html5_cover.png",
-        popup: "HTML5Popup"
+        title: "Calgary 311 Usability Case Study",
+        image: "/projects/311/311_cover.png",
+        tags: ["User research", "Undergrad", "Figma", "UX design", "Research", "Case study"],
+        popup: "Calgary311Popup"
     },
     {
         id: 2,
+        title: "CraftHive Web App",
+        image: "/projects/crafthive/crafthive_1.png",
+        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
+        popup: "CraftHivePopup"
+    },
+    {
+        id: 3,
         title: "SQLSimpl",
         image: "/projects/sqlsimpl/sqlsimpl_cover.png",
         popup: "SQLSimplPopup"
-    }/*,,
+    },
     {
-        id: 3,
-        title: "Lucid Travels",
-        image: "/projects/lucidtravels/lucidtravels_cover.png",
-        popup: "LucidTravelsPopup"
-    }*/
+        id: 4,
+        title: "INFO 3600 Usability and User Testing Project",
+        image: "/projects/usability/usability_cover.png",
+        tags: ["Ideation", "Prototyping", "User testing methodolgies", "Think aloud protocol", "UX design"],
+        popup: "UsabilityPopup"
+    },
+     {
+        id: 5,
+        title: "IndigiPRINTS + AR Wayfinding Projects",
+        image: "/projects/ar/ar_cover.png",
+        tags: ["Research", "AR design", "Mixed reality", "AR for storytelling", "Wayfinding using AR"],
+        popup: "ARPopup"
+    }
 ];
 
-export const SideProjectsSection = () => {
+export const UXDesignSection = () => {
     const [activePopup, setActivePopup] = useState(null);
 
     const openPopup = (popupName) => {
@@ -58,14 +77,14 @@ export const SideProjectsSection = () => {
     };
 
     return (
-        <section id="side_projects" className="py-32 px-4 relative">
+        <section id="pro_projects" className="py-32 px-4 relative">
             <div className="container max-w-screen-xl mx-auto">
-                <h2 className="text-4xl md:text-5xl mb-12 about-text text-center">
-                    My Other<span className="text-primary"> Side Projects</span>
+                <h2 className="text-4xl md:text-5xl mb-16 about-text text-center">
+                    My <span className="text-primary"> UX Design </span> Initiatives
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
-                    These are some examples of other projects and side initiatives I created as a student and in my free time. They showcase my passion and enthusiam for other aspects of Information Design beyond usability studies and UX design. Click on each image to view more info on these side projects and explore why I'm so passionate for them!
+                Here are the UX design, usability, and front-end web development projects I completed independently and collaboratively during my time as an Information Design undergrad. <br></br>Click on any image to explore the project details and my design process!
                 </p>
 
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -81,12 +100,16 @@ export const SideProjectsSection = () => {
                                     alt={project.title} 
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
+                                {/*<p>
+                                    {project.title}
+                                </p>*/}
                             </div>
                         </div>
+                    
                     ))}
                 </div>
             </div>
-            
+
             {/* Render active popup */}
             {renderPopup()}
         </section>

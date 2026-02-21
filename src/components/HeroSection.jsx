@@ -13,7 +13,7 @@ export const HeroSection = () => {
             </h1>
 
             <p className="text-xl text-center md:text-2xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4 pt-10">
-               I'm an <span className="text-primary">Information Designer,</span> specializing in <span className="text-primary">usability research, interactive UX design,</span> and<span className="text-primary"> intuitive front-end web development.</span>
+               I'm an <span className="text-primary">Information Designer,</span> specializing in <span className="text-primary">interactive UX design, visual communication,</span> and<span className="text-primary"> intuitive front-end web development.</span>
             </p>
 
             <p className="text-xl text-center md:text-2xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-4">

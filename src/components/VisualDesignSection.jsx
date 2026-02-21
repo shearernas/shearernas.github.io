@@ -1,68 +1,66 @@
 import React, { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import LucidTravelsPopup from "./popups/LucidTravelsPopup";
+import HTML5Popup from "./popups/HTML5Popup";
 import NordiqPopup from "./popups/NordiqPopup";
-import Calgary311Popup from "./popups/311Popup";
 import CraftHivePopup from "./popups/CraftHivePopup";
 import SystemMapPopup from "./popups/SystemMapPopup";
-import UsabilityPopup from "./popups/UsabilityPopup";
-import ARPopup from "./popups/ARPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
+    HTML5Popup: HTML5Popup,
     NordiqPopup: NordiqPopup,
-    Calgary311Popup: Calgary311Popup,
     CraftHivePopup: CraftHivePopup,
     SystemMapPopup: SystemMapPopup,
-    UsabilityPopup: UsabilityPopup,
-    ARPopup: ARPopup
+    LucidTravelsPopup: LucidTravelsPopup
 };
 
 const projects = [
+
     {
         id: 1,
-        title: "Calgary 311 Usability Case Study",
-        image: "/projects/311/311_cover.png",
-        tags: ["User research", "Undergrad", "Figma", "UX design", "Research", "Case study"],
-        popup: "Calgary311Popup"
-    },
-    {
-        id: 2,
-        title: "CraftHive Web App",
-        image: "/projects/crafthive/crafthive_1.png",
-        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
-        popup: "CraftHivePopup"
-    },
-    {
-        id: 3,
         title: "Nordiq Alberta",
         image: "/projects/nordiq/nordiq_2.png",
         tags: ["Graphic design", "Marketing", "Canva", "Adobe Illustrator", "Adobe Aero", "Print design", "Content creation"],
         popup: "NordiqPopup"
     },
     {
-        id: 4,
+        id: 2,
         title: "Systems Mapping Project",
         image: "/projects/systemsmap/systemsmap_cover.png",
         tags: ["Systems thinking", "Systems mapping", "Literary review", "Research", "Figma", "Subject matter expert interviews"],
         popup: "SystemMapPopup"
     },
     {
-        id: 5,
-        title: "INFO 3600 Usability and User Testing Project",
-        image: "/projects/usability/usability_cover.png",
-        tags: ["Ideation", "Prototyping", "User testing methodolgies", "Think aloud protocol", "UX design"],
-        popup: "UsabilityPopup"
+        id: 3,
+        title: "HTML5 Web Adverts",
+        image: "/projects/html5/html5_cover.png",
+        popup: "HTML5Popup"
     },
-     {
+    {
+        id: 4,
+        title: "CraftHive Web App",
+        image: "/projects/crafthive/crafthive_1.png",
+        tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
+        popup: "CraftHivePopup"
+    },
+    /*
+    {
+        id: 5,
+        title: "Where on Earth Poster",
+        image: "/projects/woe/woe_cover.png",
+        popup: "WoEPopup"
+    },*/
+    /*
+    {
         id: 6,
-        title: "IndigiPRINTS + AR Wayfinding Projects",
-        image: "/projects/ar/ar_cover.png",
-        tags: ["Research", "AR design", "Mixed reality", "AR for storytelling", "Wayfinding using AR"],
-        popup: "ARPopup"
-    }
+        title: "Lucid Travels",
+        image: "/projects/lucidtravels/lucidtravels_cover.png",
+        popup: "LucidTravelsPopup"
+    }*/
 ];
 
-export const ProCasStudSection = () => {
+export const VisualDesignSection = () => {
     const [activePopup, setActivePopup] = useState(null);
 
     const openPopup = (popupName) => {
@@ -87,14 +85,14 @@ export const ProCasStudSection = () => {
     };
 
     return (
-        <section id="pro_projects" className="py-32 px-4 relative">
+        <section id="side_projects" className="py-32 px-4 relative">
             <div className="container max-w-screen-xl mx-auto">
-                <h2 className="text-4xl md:text-5xl mb-16 about-text text-center">
-                    My Projects and<span className="text-primary"> Case Studies</span>
+                <h2 className="text-4xl md:text-5xl mb-12 about-text text-center">
+                    My <span className="text-primary"> Visual Design </span> Work
                 </h2>
 
                 <p className="text-center text-muted-foreground mb-12 max-w-4xl mx-auto text-lg md:text-xl">
-                    These are some of the UX case studies, research and design projects, and front-end design initiatives that I completed during my time as a student, as well as through my work experience co-op, which I developed independently and collaboratively as an Information Design graduate. Click on each image to view the project details and insights into my design process!
+                Here are a few information design projects I worked on as both a student and a professional. These projects reflect my passion for areas of information design beyond usability studies and UX design. Click on any image to learn more about each project!
                 </p>
 
                 <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -108,18 +106,14 @@ export const ProCasStudSection = () => {
                                 <img 
                                     src={project.image} 
                                     alt={project.title} 
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-120"
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                                 />
-                                {/*<p>
-                                    {project.title}
-                                </p>*/}
                             </div>
                         </div>
-                    
                     ))}
                 </div>
             </div>
-
+            
             {/* Render active popup */}
             {renderPopup()}
         </section>

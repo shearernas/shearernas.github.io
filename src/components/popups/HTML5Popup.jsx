@@ -87,10 +87,7 @@ function HTML5Popup({ onClose }) {
 
             <section className='text-start px-8'>
                 <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                    Below are 3 examples of animated and static web advertisements in standard billboard and MPU sizes that I created in an effort to learn how to work with HTML5 animation and graphic design from web advertisements. No copyright infringement is intended at all! I created these advertisements for educational purposes only, and they are not affiliated with or endorsed by the respective companies.
-                </p>
-                <p className='text-start leading-relaxed px-4 py-2 text-black text-lg'>
-                    <strong>No copyright infringement is intended at all!</strong> I created these advertisements for educational purposes only, and they are not affiliated with or endorsed by the respective companies.
+                    Below are 3 examples of animated and static web advertisements in standard billboard and MPU sizes that I created in an effort to learn how to work with HTML5 animation and graphic design from web advertisements. <strong>No copyright infringement is intended at all!</strong> I created these advertisements for educational purposes only, and they are not affiliated with or endorsed by the respective companies.
                 </p>
                 <p className='text-start leading-relaxed px-4 text-black text-lg'>
                 For these static Lexus advertisements below, I did a quick deep dive into the web design principles of Lexus and used existing web advertisements from them as reference for my designs. I wanted to create sleek and modern designs that aligned with Lexus's brand identity, using their color scheme, typography, and overall aesthetic. 

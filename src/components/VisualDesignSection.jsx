@@ -5,6 +5,7 @@ import HTML5Popup from "./popups/HTML5Popup";
 import NordiqPopup from "./popups/NordiqPopup";
 import CraftHivePopup from "./popups/CraftHivePopup";
 import SystemMapPopup from "./popups/SystemMapPopup";
+import WoEPopup from "./popups/WoEPopup";
 
 // Component mapping object - add more popup components here as you create them
 const popupComponents = {
@@ -12,7 +13,8 @@ const popupComponents = {
     NordiqPopup: NordiqPopup,
     CraftHivePopup: CraftHivePopup,
     SystemMapPopup: SystemMapPopup,
-    LucidTravelsPopup: LucidTravelsPopup
+    LucidTravelsPopup: LucidTravelsPopup,
+    WoEPopup: WoEPopup
 };
 
 const projects = [
@@ -44,13 +46,12 @@ const projects = [
         tags: ["React", "JavaScript", "Front end web development", "Figma", "UX design", "Customer discovery", "Ideation"],
         popup: "CraftHivePopup"
     },
-    /*
     {
         id: 5,
         title: "Where on Earth Poster",
         image: "/projects/woe/woe_cover.png",
         popup: "WoEPopup"
-    },*/
+    }
     /*
     {
         id: 6,
